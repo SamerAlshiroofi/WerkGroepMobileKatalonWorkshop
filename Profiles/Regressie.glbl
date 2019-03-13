@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>default</name>
+   <name>Regressie</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
       <initValue>10</initValue>
@@ -16,12 +16,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'D:\\Mijn Documenten\\Salves\\WerkGroep Mobile\\KatalonAndroidTest'</initValue>
+      <initValue>'D:\\Mijn Documenten\\Salves\\WerkGroep Mobile\\KatalonAndroidTest\\MwApp.apk'</initValue>
       <name>G_AndroidApp</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>5</initValue>
       <name>G_ShortTimeOut</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'12345678'</initValue>
+      <name>UserName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qwertyuio'</initValue>
+      <name>Wachtwoord</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
