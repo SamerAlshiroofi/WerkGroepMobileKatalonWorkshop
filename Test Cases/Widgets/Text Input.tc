@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Simple dialog test</name>
+   <name>Text Input</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>6d071b0e-0b13-4c36-b1db-0dbc6e899f8b</testCaseGuid>
+   <testCaseGuid>84753669-d8e0-4547-b445-816703adb93d</testCaseGuid>
 </TestCaseEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Simple dialog test</name>
+   <name>Toggle Switch</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>6d071b0e-0b13-4c36-b1db-0dbc6e899f8b</testCaseGuid>
+   <testCaseGuid>6221f1fc-e7b1-4cbd-8eff-d2720711f8bb</testCaseGuid>
 </TestCaseEntity>

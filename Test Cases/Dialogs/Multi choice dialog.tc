@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Multi choice dialog</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1014a897-23fe-4c02-bac5-1510a163191e</testCaseGuid>
+   <variable>
+      <defaultValue>'New York'</defaultValue>
+      <description></description>
+      <id>eacb4160-c5e9-444a-bb3f-49b6b88e97bf</id>
+      <masked>false</masked>
+      <name>stad1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Los Angeles'</defaultValue>
+      <description></description>
+      <id>a3143274-5158-4789-b8a5-4cec49d5034e</id>
+      <masked>false</masked>
+      <name>stad2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Paris'</defaultValue>
+      <description></description>
+      <id>506a228f-f7df-417b-b83d-33847e98edee</id>
+      <masked>false</masked>
+      <name>stad4</name>
+   </variable>
+   <variable>
+      <defaultValue>'London'</defaultValue>
+      <description></description>
+      <id>01250488-eac3-4957-b39a-e1dca87fc773</id>
+      <masked>false</masked>
+      <name>stad5</name>
+   </variable>
+</TestCaseEntity>
