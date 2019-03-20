@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 Mobile.startApplication(GlobalVariable.G_AndroidApp, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 'Unlock screen'
-Mobile.unlockScreen()
+Mobile.unlockScreen(FailureHandling.CONTINUE_ON_FAILURE)
 
 //if (false) {
 //    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)

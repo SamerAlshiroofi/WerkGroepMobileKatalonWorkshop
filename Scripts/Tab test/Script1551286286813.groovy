@@ -13,15 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.waitForElementPresent(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.waitForElementPresent(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/tab Widgets'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/tab Widgets'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 device_Height = Mobile.getDeviceHeight(FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -37,7 +37,7 @@ int endY = device_Height * 0.70
 
 Mobile.swipe(startX, startY, endX, endY, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/toolbar/contextual menu'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/toolbar/contextual menu'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/toolbar/menu button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/toolbar/menu button'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//*[@class = 'android.widget.ImageView' and @instance = '6' and @resource-id = 'com.singh.mwdemoapp:id/img_main_card41_bookmark' and @checked = 'false']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

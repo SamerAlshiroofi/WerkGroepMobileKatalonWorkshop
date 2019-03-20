@@ -14,16 +14,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'voor enkel test alleen\r\n'
-Mobile.startApplication('D:\\Mijn Documenten\\Salves\\WerkGroep Mobile\\KatalonAndroidTest\\MwApp.apk', false)
+not_run: Mobile.startApplication('D:\\Mijn Documenten\\Salves\\WerkGroep Mobile\\KatalonAndroidTest\\MwApp.apk', false)
 
 'voor enkel test alleen'
-Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), '1234567892', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), '1234567892', FailureHandling.CONTINUE_ON_FAILURE)
 
 'voor enkel test alleen'
-Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), 'dasdasdas', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), 'dasdasdas', FailureHandling.CONTINUE_ON_FAILURE)
 
 'voor enkel test alleen'
-Mobile.pressBack(FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.pressBack(FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
