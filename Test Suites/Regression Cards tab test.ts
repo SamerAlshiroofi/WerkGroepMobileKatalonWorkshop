@@ -3,8 +3,8 @@
    <description></description>
    <name>Regression Cards tab test</name>
    <tag></tag>
-   <executionMode>SEQUENTIAL</executionMode>
-   <maxConcurrentInstances>8</maxConcurrentInstances>
+   <executionMode>PARALLEL</executionMode>
+   <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -13,11 +13,30 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-A310F (Android 6.0.1)</value>
+                  <value>samsung SM-G973F (Android 9)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>52033ce659c4b3d7</value>
+                  <value>RF8M318YJ1F</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
+            <profileName>Regressie</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>samsung SM-G950F (Android 9)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>ce051715b179ee1002</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -37,6 +56,25 @@
                <entry>
                   <key>deviceId</key>
                   <value>UBV0218712003040</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>false</runEnabled>
+         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
+            <profileName>Regressie</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>Google Pixel 2 (Android 9)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>HT79S1A01103</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>

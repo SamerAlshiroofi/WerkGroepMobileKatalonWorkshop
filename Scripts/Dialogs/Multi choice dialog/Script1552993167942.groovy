@@ -19,9 +19,9 @@ Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/Multi choice dialog'), 0, Fa
 
 Mobile.verifyElementText(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Title popup'), 'Multi choice dialog', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Checkbox - New York'), 0)
+Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Checkbox - New York'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Checkbox - Paris'), 0)
+Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Checkbox - Paris'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Button - OK'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -4,6 +4,12 @@
    <name>ToggleButton- Uit</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.ToggleButton' and @instance = '0' and (text() = 'UIT' or . = 'UIT') and @resource-id = 'com.singh.mwdemoapp:id/toggleButton']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Uit</value>
+      <value>UIT</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

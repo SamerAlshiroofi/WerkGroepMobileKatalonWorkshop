@@ -25,16 +25,16 @@ not_run: Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordFiel
 'voor enkel test alleen'
 not_run: Mobile.pressBack(FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
 'voor enkel test alleen'
-Mobile.tap(findTestObject('AppWerkGroep/LoginScherm/LoginButton'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.tap(findTestObject('AppWerkGroep/LoginScherm/LoginButton'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 'Get Device Height and Store in device_height variable'
-device_Height = Mobile.getDeviceHeight()
+device_Height = Mobile.getDeviceHeight(FailureHandling.CONTINUE_ON_FAILURE)
 
 'Get Width Height and Store in device_Width variable'
-device_Width = Mobile.getDeviceWidth()
+device_Width = Mobile.getDeviceWidth(FailureHandling.CONTINUE_ON_FAILURE)
 
 'Storing the startX value by dividing device width by 2. Because x coordinates are constant for Vertical Swiping'
 int startX = device_Width / 2
@@ -52,21 +52,23 @@ int endY = device_Height * 0.70
 
 // Mobile.swipe(startX, endY, endX, startY)
 'Swipe Vertical from bottom to top'
-Mobile.swipe(startX, startY, endX, endY)
+Mobile.swipe(startX, startY, endX, endY, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.scrollToText('Salves Test app', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('Salves Test app', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/toolbar/menu button'), 0)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/toolbar/menu button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('AppWerkGroep/toolbar/menu button'), 0)
+Mobile.tap(findTestObject('AppWerkGroep/toolbar/menu button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Side menu/MW icon'), 0)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Side menu/MW icon'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Side menu/Logout'), 0)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Side menu/Logout'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('AppWerkGroep/Side menu/Logout'), 0)
+Mobile.tap(findTestObject('AppWerkGroep/Side menu/Logout'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 0)
+Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.closeApplication()
+Mobile.closeApplication(FailureHandling.CONTINUE_ON_FAILURE)
+
+Mobile.checkElement(findTestObject(null), 0)
 

@@ -17,9 +17,9 @@ Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 0, FailureHan
 
 Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/Simple dialog 1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Dialogs tab/PopUp/PopUp TextView'), 0)
+Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Dialogs tab/PopUp/PopUp TextView'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementText(findTestObject('AppWerkGroep/Dialogs tab/PopUp/PopUp TextView'), 'A simple dialog', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Button - OK'), 0)
+Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/PopUp/Button - OK'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

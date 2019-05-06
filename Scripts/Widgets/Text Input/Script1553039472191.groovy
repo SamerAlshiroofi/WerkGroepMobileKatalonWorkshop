@@ -13,19 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/tab Widgets'), 0)
+Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/tab Widgets'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.waitForElementPresent(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 0)
+Mobile.waitForElementPresent(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.sendKeys(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'leuke oefening')
+Mobile.sendKeys(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'leuke oefening', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementText(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'leuke oefening')
+Mobile.verifyElementText(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'leuke oefening', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.clearText(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 0)
+Mobile.clearText(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.sendKeys(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'minder leuke oefenin')
+Mobile.sendKeys(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'minder leuke oefenin', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.verifyElementText(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'minder leuke oefenin')
+Mobile.verifyElementText(findTestObject('AppWerkGroep/Widgets tab/EditText field'), 'minder leuke oefenin', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.hideKeyboard()
+not_run: Mobile.hideKeyboard(FailureHandling.CONTINUE_ON_FAILURE)
 

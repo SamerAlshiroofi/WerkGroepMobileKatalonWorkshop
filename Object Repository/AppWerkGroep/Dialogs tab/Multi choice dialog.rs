@@ -4,6 +4,12 @@
    <name>Multi choice dialog</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.Button' and @instance = '3' and (text() = 'MULTI CHOICE DIALOG' or . = 'MULTI CHOICE DIALOG') and @resource-id = 'com.singh.mwdemoapp:id/btn_dialog_4']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Multi choice dialog</value>
+      <value>MULTI CHOICE DIALOG</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
