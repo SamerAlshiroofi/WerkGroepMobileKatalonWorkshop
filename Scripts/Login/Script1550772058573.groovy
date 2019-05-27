@@ -16,6 +16,8 @@ import internal.GlobalVariable as GlobalVariable
 'maakt gebruik van Globale variabelen\r\n'
 Mobile.startApplication(GlobalVariable.G_AndroidApp, false, FailureHandling.CONTINUE_ON_FAILURE)
 
+not_run: Mobile.startApplication('kobiton-store:33069', false)
+
 'Unlock screen'
 Mobile.unlockScreen(FailureHandling.CONTINUE_ON_FAILURE)
 
