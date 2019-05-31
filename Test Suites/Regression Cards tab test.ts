@@ -75,11 +75,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-G950F (Android 9)</value>
+                  <value>samsung SM-G973F (Android 9)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>ce051715b179ee1002</value>
+                  <value>RF8M318YJ1F</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -103,7 +103,7 @@
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
