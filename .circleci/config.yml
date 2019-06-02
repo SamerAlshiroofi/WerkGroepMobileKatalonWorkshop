@@ -3,35 +3,32 @@ jobs:
 
   test:
   	Run test suite:
-	 docker:
-      - image: katalonstudio/katalon
-     steps:
-      - checkout
-      - run:
-          name: Execute Katalon Studio
-          command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
-      - store-test_results:
-          path: ./report
-      - store-artifacts:
-          path: ./report 
+  		docker:
+			- image: katalonstudio/katalon
+		steps:
+			- checkout
+      		- run:
+          		name: Execute Katalon Studio
+          		command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+      		- store-test_results:
+          		path: ./report
+      		- store-artifacts:
+          		path: ./report 
           
-   Run test suite collection:
-   	docker:
-      - image: katalonstudio/katalon
-    steps:
-      - checkout
-      - run:
-          name: Execute Katalon Studio
-          command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
-      - store-test_results:
-          path: ./report
-      - store-artifacts:
-          path: ./report        
+	Run test suite collection:
+   		docker:
+      		- image: katalonstudio/katalon
+    	steps:
+      		- checkout
+     		- run:
+         		name: Execute Katalon Studio
+          		command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
+      		- store-test_results:
+          		path: ./report
+      		- store-artifacts:
+          		path: ./report        
 
-  
-  
-  
-  
+
  workflows:
   version: 2
   run_katalon:
