@@ -5,7 +5,7 @@ jobs:
    - image: katalonstudio/katalon
    
   test:
-   Run test suite:
+   Run_test_suite:
     docker:
     - image: katalonstudio/katalon
     steps:
@@ -18,7 +18,7 @@ jobs:
       - store-artifacts:
          path: ./report 
           
-		Run test suite collection:
+		Run_test_suite_collection:
    			docker:
       			- image: katalonstudio/katalon
     		steps:
@@ -37,9 +37,9 @@ jobs:
 	run_katalon:
 		jobs:
 			- test: 
-      			- Run test suite:
-      			- Run test suite collection:
+      			- Run_test_suite:
+      			- Run_test_suite_collection:
           			requires:
-            			- Run test suite
+            			- Run_test_suite
 
             
