@@ -22,14 +22,14 @@ jobs:
       docker:
         - image: katalonstudio/katalon
       steps:
-      	- checkout
-     	- run:
+        - checkout
+        - run:
             name: Execute Katalon Studio
             command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
-      		  - store-test_results:
-          		  path: ./report
-      		  - store-artifacts:
-          		  path: ./report        
+              - store-test_results:
+                  path: ./report
+              - store-artifacts:
+                  path: ./report        
 
 workflows:
   version: 2
