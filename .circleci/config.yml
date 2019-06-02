@@ -11,12 +11,12 @@ jobs:
     steps:
     - checkout
     - run:
-      name: Execute Katalon Studio
-      command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
-      - store-test_results:
-         path: ./report
-      - store-artifacts:
-         path: ./report 
+       name: Execute Katalon Studio
+       command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+       - store-test_results:
+          path: ./report
+       - store-artifacts:
+          path: ./report 
           
 		Run_test_suite_collection:
    			docker:
