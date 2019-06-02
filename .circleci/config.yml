@@ -12,7 +12,7 @@ jobs:
         - checkout
         - run:
             name: Execute Katalon Studio
-            command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+            command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
         - store-test_results:
             path: ./report
         - store-artifacts:
@@ -25,7 +25,7 @@ jobs:
         - checkout
         - run:
             name: Execute Katalon Studio
-            command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
+            command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
               - store-test_results:
                   path: ./Reports
               - store-artifacts:
