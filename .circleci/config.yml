@@ -1,7 +1,6 @@
 version: 2
 jobs:
-  build:
-        
+
   test:
   	Run test suite:
 	 docker:
@@ -29,7 +28,6 @@ jobs:
       - store-artifacts:
           path: ./report        
 
-  deploy:
   
   
   
@@ -38,7 +36,6 @@ jobs:
   version: 2
   run_katalon:
     jobs:
-    	- build
     	- test: 
       		- Run test suite:
       		- Run test suite collection:
