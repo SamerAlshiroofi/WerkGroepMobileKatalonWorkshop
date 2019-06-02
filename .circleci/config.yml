@@ -1,45 +1,44 @@
 version: 2
 jobs:
- build:
-  docker:
-   - image: katalonstudio/katalon
+  build:
+    docker:
+      - image: katalonstudio/katalon
    
   test:
-   Run_test_suite:
-    docker:
-    - image: katalonstudio/katalon
-    steps:
-    - checkout
-    - run:
-       name: Execute Katalon Studio
-       command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
-       - store-test_results:
-          path: ./report
-       - store-artifacts:
-          path: ./report 
+    Run_test_suite:
+      docker:
+        - image: katalonstudio/katalon
+      steps:
+        - checkout
+        - run:
+            name: Execute Katalon Studio
+            command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+        - store-test_results:
+            path: ./report
+        - store-artifacts:
+            path: ./report 
           
-		Run_test_suite_collection:
-   			docker:
-      			- image: katalonstudio/katalon
-    		steps:
-      			- checkout
-     			- run:
-         			name: Execute Katalon Studio
-          			command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
-      			- store-test_results:
-          			path: ./report
-      			- store-artifacts:
-          			path: ./report        
+    Run_test_suite_collection:
+      docker:
+        - image: katalonstudio/katalon
+      steps:
+      	- checkout
+     	- run:
+            name: Execute Katalon Studio
+            command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
+      		  - store-test_results:
+          		  path: ./report
+      		  - store-artifacts:
+          		  path: ./report        
 
-
- workflows:
- 	version: 2
+workflows:
+  version: 2
 	run_katalon:
-		jobs:
-			- test: 
-      			- Run_test_suite:
-      			- Run_test_suite_collection:
-          			requires:
-            			- Run_test_suite
+	  jobs:
+        - test: 
+      		- Run_test_suite:
+      		- Run_test_suite_collection:
+          		requires:
+                  - Run_test_suite
 
             
