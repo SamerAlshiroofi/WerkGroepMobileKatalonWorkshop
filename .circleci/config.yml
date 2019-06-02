@@ -2,20 +2,21 @@ version: 2
 jobs:
  build:
   docker:
-   - image: katalonstudio/katalon	
-	test:
-  		Run test suite:
-  			docker:
-				- image: katalonstudio/katalon
-			steps:
-				- checkout
-      			- run:
-          			name: Execute Katalon Studio
-          			command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
-      			- store-test_results:
-          			path: ./report
-      			- store-artifacts:
-          			path: ./report 
+   - image: katalonstudio/katalon
+   
+   test:
+   Run test suite:
+    docker:
+    - image: katalonstudio/katalon
+    steps:
+    - checkout
+    - run:
+      name: Execute Katalon Studio
+      command: cd Tests && katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+      - store-test_results:
+         path: ./report
+      - store-artifacts:
+         path: ./report 
           
 		Run test suite collection:
    			docker:
