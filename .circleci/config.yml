@@ -27,9 +27,9 @@ jobs:
             name: Execute Katalon Studio
             command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
               - store-test_results:
-                  path: ./Reports
+                  path: ./Report
               - store-artifacts:
-                  path: ./Reports       
+                  path: ./Report       
 
 workflows:
   version: 2
