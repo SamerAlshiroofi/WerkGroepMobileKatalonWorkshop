@@ -1,13 +1,6 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: buildpack-deps:trusty
-    steps:
-      - checkout
-      - run:
-          name: pull from git
-          command: git push --force https://github.com/SamerAlshiroofi/WerkGroepMobileKatalonWorkshop.git master
         
   test:
   	Run test suite:
