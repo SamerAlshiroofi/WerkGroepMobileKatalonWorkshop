@@ -4,7 +4,7 @@ jobs:
   docker:
    - image: katalonstudio/katalon
    
-   test:
+  test:
    Run test suite:
     docker:
     - image: katalonstudio/katalon
