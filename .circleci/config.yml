@@ -35,10 +35,9 @@ workflows:
   version: 2
     run_katalon:
       jobs:
-        - test:
-            - Run_test_suite:
-            - Run_test_suite_collection:
-                requires:
-                  - Run_test_suite
+        - Run_test_suite:
+        - Run_test_suite_collection:
+            requires:
+              - Run_test_suite
 
             
