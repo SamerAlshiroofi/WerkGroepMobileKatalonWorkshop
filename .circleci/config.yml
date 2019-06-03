@@ -11,7 +11,7 @@ jobs:
       steps:
         - checkout
         - run:
-            name: Execute Katalon Studio
+            name: Execute Katalon Studio Test Cards tab
             command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
         - store-test_results:
             path: ./report
@@ -24,7 +24,7 @@ jobs:
       steps:
         - checkout
         - run:
-            name: Execute Katalon Studio
+            name: Execute Katalon Studio Regression Cards tab test
             command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
         - store-test_results:
             path: ./reports/report
