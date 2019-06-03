@@ -3,6 +3,13 @@ jobs:
   build:
     docker:
       - image: katalonstudio/katalon
+
+container_katalon: &container_katalon
+  docker:
+    - image: katalonstudio/katalon
+  working_directory: *working_directory
+
+
   test:
     Run_test_suite:
       docker:
