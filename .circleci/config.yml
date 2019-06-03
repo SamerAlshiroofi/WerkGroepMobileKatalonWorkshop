@@ -1,10 +1,5 @@
 version: 2
-
-container_katalon: &container_katalon
-  docker:
-    - image: katalonstudio/katalon
-  working_directory: *working_directory
-  
+ 
 jobs:
   build:
     docker:
