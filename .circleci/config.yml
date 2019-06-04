@@ -2,11 +2,11 @@ version: 2
 
 references:
     working_directory: &working_directory
-      ~/Primephonic.Web
+      ~/Android App werkgroep.prj
 
 container_node: &container_node
   docker:
-    - image: circleci/node:8
+    - image: circleci/node:1
   working_directory: *working_directory
 
 container_katalon: &container_katalon
