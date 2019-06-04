@@ -15,22 +15,18 @@ container_katalon: &container_katalon
   working_directory: *working_directory
  
 jobs:
-  build:
+  Run_test_suite:
     docker:
       - image: katalonstudio/katalon
-
-    Run_test_suite:
-      docker:
-        - image: katalonstudio/katalon
-      steps:
-        - checkout
-        - run:
-            name: Execute Katalon Studio Test Cards tab
-            command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
-        - store-test_results:
-            path: ./report
-        - store-artifacts:
-            path: ./report 
+    steps:
+      - checkout
+      - run:
+          name: Execute Katalon Studio Test Cards tab
+          command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+      - store-test_results:
+          path: ./report
+      - store-artifacts:
+          path: ./report 
           
     Run_test_suite_collection:
       docker:
