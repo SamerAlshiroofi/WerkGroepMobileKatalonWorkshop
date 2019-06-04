@@ -1,19 +1,6 @@
 version: 2
 
-references:
-    working_directory: &working_directory
-      ~/Android App werkgroep.prj
 
-container_node: &container_node
-  docker:
-    - image: circleci/node:1
-  working_directory: *working_directory
-
-container_katalon: &container_katalon
-  docker:
-    - image: katalonstudio/katalon
-  working_directory: *working_directory
-  
 jobs:
   Run_test_suite:
     docker:
