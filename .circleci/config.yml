@@ -21,6 +21,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
           name: Execute Katalon Studio Test Cards tab
           command: katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
       - store-test_results:
@@ -34,6 +36,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install npm wee
+          command: npm install
           name: Execute Katalon Studio Test Cards tab
           command: katalon-execute.sh katalon -noSplash  -runMode=console -consoleLog -projectPath="D:\Mijn Documenten\Salves\WerkGroep Mobile\DemoProjectKatalon\Demo Project.prj\Demo Project Katalon.prj" -retry=0 -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
       - store-test_results:
@@ -54,21 +58,6 @@ jobs:
         - store-artifacts:
             path: ./reports/report  
             
-      steps:
-        - checkout
-        - run:
-            name: Update npm
-            command: 'sudo npm install -g npm@latest'
-        - restore_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-        - run:
-            name: Install npm wee
-            command: npm install
-        - save_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-            paths:
-              - node_modules       
-
 workflows:
   version: 2
   run_katalon:
