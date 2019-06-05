@@ -21,7 +21,7 @@
       
       steps:
         - checkout
-        - run: npm install
+        - run: npm ci
         - run: npm test
         - run:
             name: Execute Katalon Studio Test Cards tab
