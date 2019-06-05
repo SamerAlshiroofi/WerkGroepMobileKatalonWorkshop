@@ -23,8 +23,8 @@ jobs:
       - run:
           name: Update npm & Execute Katalon Studio Test Cards tab
           command: 
-            - 'sudo npm install -g npm@latest' 
-            - katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
+            'sudo npm install -g npm@latest' 
+            katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
       - store-test_results:
           path: ./report
       - store-artifacts:
@@ -38,9 +38,9 @@ jobs:
       - run:
           name: Execute Katalon Studio Test Cards tab
           command: 
-            - npm install
-            - npm run build:play 
-            - katalon-execute.sh katalon -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
+            npm install
+            npm run build:play 
+            katalon-execute.sh katalon -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
       - store-test_results:
           path: ./report
       - store-artifacts:
