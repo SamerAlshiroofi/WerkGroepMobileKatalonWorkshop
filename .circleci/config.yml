@@ -1,80 +1,83 @@
 version: 2
-
-references:
-    working_directory: &working_directory
-      ~/Android App werkgroep.prj
-
-container_node: &container_node
-  docker:
-    - image: circleci/node:1
-  working_directory: *working_directory
-
-container_katalon: &container_katalon
-  docker:
-    - image: katalonstudio/katalon
-  working_directory: *working_directory
+  jobs: 
+    build:
+      working_directory: ~/Android App werkgroep.prj
+      docker:
+        - image: circleci/node:1
+        - image: katalonstudio/katalon
+      steps:
+        - checkout
+        - run:
+            name: Update npm
+            command: 'sudo npm install -g npm@latest'
+        - restore_cache:
+            key: dependency-cache-{{ checksum "package.json" }} 
+        - run:
+            name: Install npm wee
+            command: npm install
+        - save_cache:
+            key: dependency-cache-{{ checksum "package.json" }}
+            paths:
+              - node_modules       
   
-jobs: 
-  Run_test_suite1:
-    docker:
-      - image: katalonstudio/katalon
-    steps:
-      - checkout
-      - run:
-          name: Update npm & Execute Katalon Studio Test Cards tab
-          command: 'sudo npm install -g npm@latest' && katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
-      - store-test_results:
-          path: ./report
-      - store-artifacts:
-          path: ./report  
-
-  Run_test_suite2:
-    docker:
-      - image: katalonstudio/katalon
-    steps:
-      - checkout
-      - run:
-          name: Execute Katalon Studio Test Cards tab
-          command: 
-            npm install
-            npm run build:play 
-            katalon-execute.sh katalon -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
-      - store-test_results:
-          path: ./report
-      - store-artifacts:
-          path: ./report        
-  
-  Run_test_suite_collection3:
+  test:
+    Run_test_suite1:
       docker:
         - image: katalonstudio/katalon
       steps:
         - checkout
         - run:
-            name: Execute Katalon Studio Regression Cards tab test
-            command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
+            name: Execute Katalon Studio Test Cards tab
+            command: katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
         - store-test_results:
-            path: ./reports/report
+            path: ./report
         - store-artifacts:
-            path: ./reports/report  
+            path: ./report  
+
+    Run_test_suite2:
+      docker:
+        - image: katalonstudio/katalon
+      steps:
+        - checkout
+        - run:
+            name: Execute Katalon Studio Test Cards tab
+            command: katalon-execute.sh katalon -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
+        - store-test_results:
+            path: ./report
+        - store-artifacts:
+            path: ./report        
+  
+    Run_test_suite_collection3:
+        docker:
+          - image: katalonstudio/katalon
+        steps:
+          - checkout
+          - run:
+              name: Execute Katalon Studio Regression Cards tab test
+              command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
+          - store-test_results:
+              path: ./reports/report
+          - store-artifacts:
+              path: ./reports/report  
             
-workflows:
-  version: 2
-  run_katalon:
-    jobs:
-      - Run_test_suite1:
-          filters:
-            branches:
-              only:
-      - Run_test_suite2:
-          filters:
-            branches:
-              only:
-      - Run_test_suite_collection3:
-          requires:
-            - Run_test_suite2
-          filters:
-            branches:
-              only:
+  workflows:
+    version: 2
+    run_katalon:
+      jobs:
+        - Run_test_suite1:
+            filters:
+              branches:
+                only:
+        - Run_test_suite2:
+            filters:
+              branches:
+                only:
+        - Run_test_suite_collection3:
+            requires:
+              - Run_test_suite2
+            filters:
+              branches:
+                only:
                 
 
             
