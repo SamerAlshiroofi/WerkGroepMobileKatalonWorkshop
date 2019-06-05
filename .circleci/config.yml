@@ -37,7 +37,7 @@ jobs:
       - checkout
       - run:
           name: Execute Katalon Studio Test Cards tab
-          command: npm install && katalon-execute.sh katalon -noSplash  -runMode=console -consoleLog -projectPath="D:\Mijn Documenten\Salves\WerkGroep Mobile\DemoProjectKatalon\Demo Project.prj\Demo Project Katalon.prj" -retry=0 -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
+          command: npm install && katalon-execute.sh katalon -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
       - store-test_results:
           path: ./report
       - store-artifacts:
