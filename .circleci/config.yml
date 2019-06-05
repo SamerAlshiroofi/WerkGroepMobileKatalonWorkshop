@@ -1,21 +1,6 @@
 version: 2
 
-references:
-    working_directory: &working_directory
-      ~/Android App werkgroep.prj
-
-container_node: &container_node
-  docker:
-    - image: circleci/node:1
-    command: 'sudo npm install -g npm@latest'
-  working_directory: *working_directory
-
-container_katalon: &container_katalon
-  docker:
-    - image: katalonstudio/katalon
-  working_directory: *working_directory
-  
-jobs:
+jobs: 
   Run_test_suite:
     docker:
       - image: katalonstudio/katalon
@@ -23,13 +8,26 @@ jobs:
       - checkout
       - run:
           name: Execute Katalon Studio Test Cards tab
-          command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+          command: katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
       - store-test_results:
           path: ./report
       - store-artifacts:
-          path: ./report 
-          
-    Run_test_suite_collection:
+          path: ./report  
+
+  Run_test_suite:
+    docker:
+      - image: katalonstudio/katalon
+    steps:
+      - checkout
+      - run:
+          name: Execute Katalon Studio Test Cards tab
+          command: katalon-execute.sh katalon -noSplash  -runMode=console -consoleLog -projectPath="D:\Mijn Documenten\Salves\WerkGroep Mobile\DemoProjectKatalon\Demo Project.prj\Demo Project Katalon.prj" -retry=0 -testSuitePath="Test Suites/SimpleTestFlow" -executionProfile="Global var" -deviceId="8C6X1JTMN" -browserType="Android"
+      - store-test_results:
+          path: ./report
+      - store-artifacts:
+          path: ./report        
+  
+  Run_test_suite_collection:
       docker:
         - image: katalonstudio/katalon
       steps:
@@ -40,7 +38,7 @@ jobs:
         - store-test_results:
             path: ./reports/report
         - store-artifacts:
-            path: ./reports/report
+            path: ./reports/report  
             
       steps:
         - checkout
