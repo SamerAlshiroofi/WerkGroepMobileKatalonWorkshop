@@ -3,7 +3,7 @@
     build:
       working_directory: ~/Android App werkgroep.prj
       docker:
-        - image: circleci/node:1
+        - image: circleci/node:8
         - image: katalonstudio/katalon
       steps:
         - checkout
