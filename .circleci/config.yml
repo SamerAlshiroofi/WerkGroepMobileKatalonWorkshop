@@ -64,21 +64,20 @@
     version: 2
     run_katalon:
       jobs:
-        - build
-            - Run_test_suite1:
-                filters:
-                  branches:
-                    only: master
-            - Run_test_suite2:
-                filters:
-                  branches:
-                    only: master
-            - Run_test_suite_collection3:
-                requires:
-                  - Run_test_suite2
-                filters:
-                  branches:
-                    only: master
+        - Run_test_suite1:
+            filters:
+              branches:
+                only: master
+        - Run_test_suite2:
+            filters:
+              branches:
+                only: master
+        - Run_test_suite_collection3:
+            requires:
+              - Run_test_suite2
+            filters:
+              branches:
+                only: master
                 
 
             
