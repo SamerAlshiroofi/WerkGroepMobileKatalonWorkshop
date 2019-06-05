@@ -15,7 +15,7 @@
     Run_test_suite2:
       docker:
         - image: katalonstudio/katalon
-        - image: circleci/node:7.10
+        - image: circleci/node:8
         
       working_directory: ~/repo
       
