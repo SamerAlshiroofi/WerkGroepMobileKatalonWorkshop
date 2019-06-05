@@ -1,24 +1,5 @@
   version: 2
   jobs:
-    working_directory: ~/Android App werkgroep.prj
-    docker:
-      - image: circleci/node:8
-      - image: katalonstudio/katalon
-    steps:
-      - checkout
-      - run:
-          name: Install npm wee
-          command: npm install
-      - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@latest'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - node_modules
-
     Run_test_suite1:
       docker:
         - image: katalonstudio/katalon
