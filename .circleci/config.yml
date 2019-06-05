@@ -1,26 +1,24 @@
   version: 2
-  jobs: 
-    build:
-      working_directory: ~/Android App werkgroep.prj
-      docker:
-        - image: circleci/node:8
-        - image: katalonstudio/katalon
-      steps:
-        - checkout
-        - run:
-            name: Install npm wee
-            command: npm install
-        - run:
-            name: Update npm
-            command: 'sudo npm install -g npm@latest'
-        - restore_cache:
-            key: dependency-cache-{{ checksum "package.json" }} 
-        - save_cache:
-            key: dependency-cache-{{ checksum "package.json" }}
-            paths:
-              - node_modules       
-  
-  test:
+  jobs:
+    working_directory: ~/Android App werkgroep.prj
+    docker:
+      - image: circleci/node:8
+      - image: katalonstudio/katalon
+    steps:
+      - checkout
+      - run:
+          name: Install npm wee
+          command: npm install
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
     Run_test_suite1:
       docker:
         - image: katalonstudio/katalon
@@ -32,8 +30,7 @@
         - store-test_results:
             path: ./report
         - store-artifacts:
-            path: ./report  
-
+            path: ./report
     Run_test_suite2:
       docker:
         - image: katalonstudio/katalon
@@ -45,7 +42,7 @@
         - store-test_results:
             path: ./report
         - store-artifacts:
-            path: ./report        
+            path: ./report
   
     Run_test_suite_collection3:
         docker:
@@ -58,7 +55,7 @@
           - store-test_results:
               path: ./reports/report
           - store-artifacts:
-              path: ./reports/report  
+              path: ./reports/report
             
   workflows:
     version: 2
@@ -78,6 +75,6 @@
             filters:
               branches:
                 only: master
-                
+
 
             
