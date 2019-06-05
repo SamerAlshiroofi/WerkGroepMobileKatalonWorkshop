@@ -11,15 +11,15 @@ import java.lang.Object
 
 import com.kms.katalon.core.model.FailureHandling
 
-import java.util.List
-
 import org.openqa.selenium.WebElement
-
-import java.util.Map
 
 import kms.turing.katalon.plugins.helper.table.WebTableHelper.CellTextOptions
 
 import kms.turing.katalon.plugins.helper.XPathHelper.CompareOptions
+
+import java.util.Map
+
+import java.util.List
 
 
 def static "com.mw.mobile.SwipeToElement.isElementPresent_Mobile"(
@@ -68,24 +68,6 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.equals"(
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
-    	Object value	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
-        	value
-         , 	description
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
-    	Object value	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
-        	value
-         , 	description)
-}
-
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.isNegative"(
     	Object value	
      , 	String description	
@@ -102,6 +84,24 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.isNegative"(
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).isNegative(
         	value
          , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
+    	Object value	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
+        	value
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
+    	Object value	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
+        	value
+         , 	description
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThanOrEqual"(
@@ -124,6 +124,28 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThanOrEqual"(
         	x
          , 	y
          , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
+    	Object actual	
+     , 	Object expected	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
+        	actual
+         , 	expected
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
+    	Object actual	
+     , 	Object expected	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
+        	actual
+         , 	expected
+         , 	description
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
@@ -151,62 +173,22 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
     	Object x	
      , 	Object y	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThan(
         	x
          , 	y
-         , 	description)
+         , 	description
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
     	Object x	
      , 	Object y	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThan(
         	x
          , 	y
-         , 	description
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
-    	Object actual	
-     , 	Object expected	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
-        	actual
-         , 	expected
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
-    	Object actual	
-     , 	Object expected	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
-        	actual
-         , 	expected
-         , 	description
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
-    	Object value	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
-        	value
-         , 	description
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
-    	Object value	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
-        	value
          , 	description)
 }
 
@@ -232,16 +214,22 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThanOrEqual"(
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String format	
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
+    	Object value	
      , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).equals(
-        	verifiedDate
-         , 	compare2Date
-         , 	format
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
+        	value
          , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
+    	Object value	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
+        	value
+         , 	description
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
@@ -251,6 +239,18 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
     (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).equals(
         	verifiedDate
          , 	compare2Date
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String format	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).equals(
+        	verifiedDate
+         , 	compare2Date
+         , 	format
          , 	description)
 }
 
@@ -266,6 +266,88 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
          , 	format
          , 	description
          , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String format	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
+        	verifiedDate
+         , 	compare2Date
+         , 	format
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
+        	verifiedDate
+         , 	compare2Date
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String format	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
+        	verifiedDate
+         , 	compare2Date
+         , 	format
+         , 	description
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isBefore"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isBefore(
+        	verifiedDate
+         , 	compare2Date
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isBefore"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String format	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isBefore(
+        	verifiedDate
+         , 	compare2Date
+         , 	format
+         , 	description
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isBefore"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String format	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isBefore(
+        	verifiedDate
+         , 	compare2Date
+         , 	format
+         , 	description)
+}
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFormat"(
+    	String dateInString	
+     , 	String datetimeFormat	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).matchesDateTimeFormat(
+        	dateInString
+         , 	datetimeFormat
+         , 	description)
 }
 
 def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFormat"(
@@ -280,168 +362,56 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFor
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFormat"(
-    	String dateInString	
-     , 	String datetimeFormat	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).matchesDateTimeFormat(
-        	dateInString
-         , 	datetimeFormat
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String format	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
-        	verifiedDate
-         , 	compare2Date
-         , 	format
-         , 	description
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String format	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
-        	verifiedDate
-         , 	compare2Date
-         , 	format
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
-        	verifiedDate
-         , 	compare2Date
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isBefore"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isBefore(
-        	verifiedDate
-         , 	compare2Date
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isBefore"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String format	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isBefore(
-        	verifiedDate
-         , 	compare2Date
-         , 	format
-         , 	description
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isBefore"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String format	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isBefore(
-        	verifiedDate
-         , 	compare2Date
-         , 	format
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
-    	java.util.List<String> columnHeaders	
-     , 	int timeout	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
-        	columnHeaders
-         , 	timeout)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
-    	java.util.List<String> columnHeaders	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
-        	columnHeaders)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
-    	java.util.List<String> columnHeaders	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
-        	columnHeaders
-         , 	timeout
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
-    	WebElement table	
-     , 	Map cellsInfo	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
-        	table
-         , 	cellsInfo)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
-    	WebElement table	
-     , 	Map cellsInfo	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
-        	table
-         , 	cellsInfo
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
     	WebElement table	
      , 	String columnHeader	
-     , 	String cellValue	
+     , 	String text	
+     , 	CellTextOptions textOption	
+     , 	CompareOptions compareOption	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByValueAndColHeader(
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
         	table
          , 	columnHeader
-         , 	cellValue
+         , 	text
+         , 	textOption
+         , 	compareOption
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
     	WebElement table	
      , 	String columnHeader	
-     , 	String cellValue	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByValueAndColHeader(
+     , 	String text	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
         	table
          , 	columnHeader
-         , 	cellValue)
+         , 	text)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
-    	WebElement table	
-     , 	String columnHeader	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
-        	table
-         , 	columnHeader)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
     	WebElement table	
      , 	String columnHeader	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
+     , 	String text	
+     , 	CellTextOptions textOption	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
         	table
          , 	columnHeader
-         , 	flowControl)
+         , 	text
+         , 	textOption)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String text	
+     , 	CellTextOptions textOption	
+     , 	CompareOptions compareOption	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+        	table
+         , 	columnHeader
+         , 	text
+         , 	textOption
+         , 	compareOption)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
@@ -462,26 +432,40 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValu
          , 	columnHeader)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
     	WebElement table	
-     , 	String columnHeader	
      , 	Map cellsInfo	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
         	table
-         , 	columnHeader
          , 	cellsInfo
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
+    	WebElement table	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
+        	table
+         , 	cellsInfo)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
+    	WebElement table	
+     , 	String columnHeader	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
+        	table
+         , 	columnHeader)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
     	WebElement table	
      , 	String columnHeader	
-     , 	Map cellsInfo	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
         	table
          , 	columnHeader
-         , 	cellsInfo)
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
@@ -506,22 +490,14 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnInd
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
     	WebElement table	
-     , 	Map cellsInfo	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+     , 	int columnIndex	
+     , 	int rowIndex	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
         	table
-         , 	cellsInfo)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
-    	WebElement table	
-     , 	Map cellsInfo	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
-        	table
-         , 	cellsInfo
-         , 	flowControl)
+         , 	columnIndex
+         , 	rowIndex)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
@@ -536,65 +512,89 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCell
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
     	WebElement table	
-     , 	int columnIndex	
-     , 	int rowIndex	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
-        	table
-         , 	columnIndex
-         , 	rowIndex)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	String text	
-     , 	CellTextOptions textOption	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
-        	table
-         , 	columnHeader
-         , 	text
-         , 	textOption)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	String text	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
-        	table
-         , 	columnHeader
-         , 	text)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	String text	
-     , 	CellTextOptions textOption	
-     , 	CompareOptions compareOption	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
-        	table
-         , 	columnHeader
-         , 	text
-         , 	textOption
-         , 	compareOption)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	String text	
-     , 	CellTextOptions textOption	
-     , 	CompareOptions compareOption	
+     , 	Map cellsInfo	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+        	table
+         , 	cellsInfo
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
+    	WebElement table	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+        	table
+         , 	cellsInfo)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	java.util.List<String> columnHeaders	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders
+         , 	timeout
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	java.util.List<String> columnHeaders	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	java.util.List<String> columnHeaders	
+     , 	int timeout	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders
+         , 	timeout)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String cellValue	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByValueAndColHeader(
         	table
          , 	columnHeader
-         , 	text
-         , 	textOption
-         , 	compareOption
+         , 	cellValue)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String cellValue	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByValueAndColHeader(
+        	table
+         , 	columnHeader
+         , 	cellValue
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+        	table
+         , 	columnHeader
+         , 	cellsInfo)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	Map cellsInfo	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+        	table
+         , 	columnHeader
+         , 	cellsInfo
          , 	flowControl)
 }
 
@@ -616,10 +616,22 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.clickOnColum
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
-    	String filename	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeEntirePageScreenshot(
-        	filename)
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
+    	String filename	
+     , 	String baselineDir	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).baselineImage(
+        	filename
+         , 	baselineDir)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
+    	String filename	
+     , 	String baselineDir	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).baselineImage(
+        	filename
+         , 	baselineDir
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
@@ -630,34 +642,10 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePag
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
-    	TestObject object	
-     , 	String filename	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
-        	object
-         , 	filename)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
-    	TestObject object	
-     , 	String filename	
-     , 	int timeout	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
-        	object
-         , 	filename
-         , 	timeout)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
-    	TestObject object	
-     , 	String filename	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
-        	object
-         , 	filename
-         , 	timeout
-         , 	flowControl)
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeEntirePageScreenshot"(
+    	String filename	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeEntirePageScreenshot(
+        	filename)
 }
 
 def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScalingScreenshot"(
@@ -700,6 +688,48 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeCuttingSc
          , 	flowControl)
 }
 
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
+    	TestObject object	
+     , 	String filename	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
+        	object
+         , 	filename)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
+    	TestObject object	
+     , 	String filename	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
+        	object
+         , 	filename
+         , 	timeout
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementScreenshot"(
+    	TestObject object	
+     , 	String filename	
+     , 	int timeout	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementScreenshot(
+        	object
+         , 	filename
+         , 	timeout)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
+    	java.util.List<TestObject> objects	
+     , 	String filename	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
+        	objects
+         , 	filename
+         , 	timeout
+         , 	flowControl)
+}
+
 def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
     	java.util.List<TestObject> objects	
      , 	String filename	
@@ -718,33 +748,11 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElemen
          , 	filename)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeWebElementsScreenshot"(
-    	java.util.List<TestObject> objects	
-     , 	String filename	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeWebElementsScreenshot(
-        	objects
-         , 	filename
-         , 	timeout
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScreenshot"(
     	String filename	
-     , 	String baselineDir	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).baselineImage(
-        	filename
-         , 	baselineDir)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.baselineImage"(
-    	String filename	
-     , 	String baselineDir	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).baselineImage(
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScreenshot(
         	filename
-         , 	baselineDir
          , 	flowControl)
 }
 
@@ -754,11 +762,17 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScreensho
         	filename)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeScreenshot"(
-    	String filename	
+def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementScreenshotIgnoringAreas"(
+    	TestObject object	
+     , 	String filename	
+     , 	java.util.List<TestObject> ignoreObjs	
+     , 	int timeout	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeScreenshot(
-        	filename
+    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeElementScreenshotIgnoringAreas(
+        	object
+         , 	filename
+         , 	ignoreObjs
+         , 	timeout
          , 	flowControl)
 }
 
@@ -772,20 +786,6 @@ def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementSc
          , 	filename
          , 	ignoreObjs
          , 	timeout)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementScreenshotIgnoringAreas"(
-    	TestObject object	
-     , 	String filename	
-     , 	java.util.List<TestObject> ignoreObjs	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ScreenCapture()).takeElementScreenshotIgnoringAreas(
-        	object
-         , 	filename
-         , 	ignoreObjs
-         , 	timeout
-         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.visualtesting.ScreenCapture.takeElementScreenshotIgnoringAreas"(
@@ -810,6 +810,24 @@ def static "com.mw.mobile.InstalAndStart.startInstalledApplication"(
          , 	appActivity)
 }
 
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
+    	String expectedImgPath	
+     , 	String actualImgPath	) {
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
+        	expectedImgPath
+         , 	actualImgPath)
+}
+
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
+    	String expectedImgPath	
+     , 	String actualImgPath	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
+        	expectedImgPath
+         , 	actualImgPath
+         , 	flowControl)
+}
+
 def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.verifyMatchBaseline"(
     	String filename	
      , 	String baselinePath	) {
@@ -830,14 +848,6 @@ def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.verifyMatch
 
 def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.getDifferenceRatio"(
     	String expected	
-     , 	String actual	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).getDifferenceRatio(
-        	expected
-         , 	actual)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.getDifferenceRatio"(
-    	String expected	
      , 	String actual	
      , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).getDifferenceRatio(
@@ -846,22 +856,12 @@ def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.getDifferen
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
-    	String expectedImgPath	
-     , 	String actualImgPath	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
-        	expectedImgPath
-         , 	actualImgPath)
-}
-
-def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.areMatched"(
-    	String expectedImgPath	
-     , 	String actualImgPath	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).areMatched(
-        	expectedImgPath
-         , 	actualImgPath
-         , 	flowControl)
+def static "kms.turing.katalon.plugins.visualtesting.ImageComparison.getDifferenceRatio"(
+    	String expected	
+     , 	String actual	) {
+    (new kms.turing.katalon.plugins.visualtesting.ImageComparison()).getDifferenceRatio(
+        	expected
+         , 	actual)
 }
 
 def static "com.mw.mobile.SwipeUp.scrolUp"() {
@@ -983,23 +983,23 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.endsWith"(
 def static "kms.turing.katalon.plugins.assertj.StringAssert.matches"(
     	String text	
      , 	String pattern	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.StringAssert()).matches(
         	text
          , 	pattern
-         , 	description
-         , 	flowControl)
+         , 	description)
 }
 
 def static "kms.turing.katalon.plugins.assertj.StringAssert.matches"(
     	String text	
      , 	String pattern	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.StringAssert()).matches(
         	text
          , 	pattern
-         , 	description)
+         , 	description
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.assertj.StringAssert.contains"(
@@ -1077,22 +1077,22 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.notEqual"(
 def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
     	String text	
      , 	String subText	
-     , 	boolean caseSensitive	
      , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.StringAssert()).notContain(
         	text
          , 	subText
-         , 	caseSensitive
          , 	description)
 }
 
 def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
     	String text	
      , 	String subText	
+     , 	boolean caseSensitive	
      , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.StringAssert()).notContain(
         	text
          , 	subText
+         , 	caseSensitive
          , 	description)
 }
 
@@ -1112,28 +1112,20 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
 
 def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isTrue"(
     	boolean expression	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isTrue(
         	expression
-         , 	description
-         , 	flowControl)
+         , 	description)
 }
 
 def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isTrue"(
     	boolean expression	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isTrue(
         	expression
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
-    	boolean expression	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isFalse(
-        	expression
-         , 	description)
+         , 	description
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
@@ -1144,6 +1136,14 @@ def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
         	expression
          , 	description
          , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
+    	boolean expression	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isFalse(
+        	expression
+         , 	description)
 }
 
 def static "com.testwithhari.katalon.plugins.Gmail.readLatestEMailBodyContent"(
@@ -1156,21 +1156,21 @@ def static "com.testwithhari.katalon.plugins.Gmail.readLatestEMailBodyContent"(
          , 	folderLableName)
 }
 
-def static "com.testwithhari.katalon.plugins.Gmail.deleteAllEMails"(
-    	String emailID	
-     , 	String password	
-     , 	String folderLableName	) {
-    (new com.testwithhari.katalon.plugins.Gmail()).deleteAllEMails(
-        	emailID
-         , 	password
-         , 	folderLableName)
-}
-
 def static "com.testwithhari.katalon.plugins.Gmail.getEmailsCount"(
     	String emailID	
      , 	String password	
      , 	String folderLableName	) {
     (new com.testwithhari.katalon.plugins.Gmail()).getEmailsCount(
+        	emailID
+         , 	password
+         , 	folderLableName)
+}
+
+def static "com.testwithhari.katalon.plugins.Gmail.deleteAllEMails"(
+    	String emailID	
+     , 	String password	
+     , 	String folderLableName	) {
+    (new com.testwithhari.katalon.plugins.Gmail()).deleteAllEMails(
         	emailID
          , 	password
          , 	folderLableName)
@@ -1251,16 +1251,6 @@ def static "kms.turing.katalon.plugins.assertj.ListAssert.contains"(
 def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsIgnoreOrder"(
     	java.util.List<Object> actual	
      , 	java.util.List<Object> expected	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsIgnoreOrder(
-        	actual
-         , 	expected
-         , 	description)
-}
-
-def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsIgnoreOrder"(
-    	java.util.List<Object> actual	
-     , 	java.util.List<Object> expected	
      , 	String description	
      , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsIgnoreOrder(
@@ -1268,6 +1258,16 @@ def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsIgnoreOrder"(
          , 	expected
          , 	description
          , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsIgnoreOrder"(
+    	java.util.List<Object> actual	
+     , 	java.util.List<Object> expected	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsIgnoreOrder(
+        	actual
+         , 	expected
+         , 	description)
 }
 
 def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder"(
