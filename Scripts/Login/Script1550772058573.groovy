@@ -14,11 +14,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'maakt gebruik van Globale variabelen\r\n'
-Mobile.startApplication(GlobalVariable.G_AndroidApp, false, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.startApplication(GlobalVariable.G_AndroidApp, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
 
 not_run: Mobile.startApplication('kobiton-store:33069', false)
+
+'supreet account'
+Mobile.startApplication('kobiton-store:33786', false)
 
 'Unlock screen'
 Mobile.unlockScreen(FailureHandling.CONTINUE_ON_FAILURE)
