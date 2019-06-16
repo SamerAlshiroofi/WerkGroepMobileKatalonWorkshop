@@ -24,4 +24,9 @@
       <initValue>5</initValue>
       <name>G_ShortTimeOut</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://play-accept.primephonic.com/'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

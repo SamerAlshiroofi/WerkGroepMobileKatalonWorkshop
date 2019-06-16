@@ -8,7 +8,6 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
-import com.kms.katalon.core.mobile.keyword.builtin.ScrollToTextKeyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
@@ -18,10 +17,9 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-import com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword
 
 import internal.GlobalVariable
-import io.appium.java_client.MobileElement
+
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
@@ -44,27 +42,25 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
-class SwipeToElement {
-	/**
-	 * Check if element present in timeout
-	 * @param to Katalon test object
-	 * @param timeout time to wait for element to show up
-	 * @return true if element present, otherwise false
-	 */
-	@Keyword
-	def isElementPresent_Mobile(TestObject to, int timeout){
-		try {
-			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
+public class errorHandling {
 
-			WebElement element = MobileElementCommonHelper.findElement(to, timeout)
-			if (element != null) {
-				//	KeywordUtil.markPassed("Object " + to.getObjectId() + " is present")
-				ScrollToTextKeyword("Object " + to.getObjectId() + " is present")
-			}
-			return true
-		} catch (Exception e) {
-			KeywordUtil.markFailed("Object " + to.getObjectId() + " is not present")
+	@Keyword
+	def handleErrorMessageVersion2(){
+		if (WebUI.verifyElementNotPresent(findTestObject('Error page/Back to home button'), 5, FailureHandling.CONTINUE_ON_FAILURE)) {
+			println 'Error page/Back to home button is NOT visible on screen'
+			WebUI.verifyElementPresent(findTestObject('Gravetar/Page_Primephonic/Gravetar'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+		} else {
+			println 'Error page/Back to home button is visible on screen'
+			WebUI.click(findTestObject('Error page/Back to home button'), FailureHandling.CONTINUE_ON_FAILURE)
 		}
-		return false;
 	}
+}
+
+/**
+ * Get mobile driver for current session
+ * @return mobile driver for current session
+ */
+@Keyword
+def WebDriver getCurrentSessionMobileDriver() {
+	return MobileDriverFactory.getDriver();
 }

@@ -15,14 +15,16 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/tab Widgets'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-
+'If statement'
 if (true) {
-	Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/ToggleButton- Uit'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+    Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/ToggleButton- Uit'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 } else if (true) {
-	Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/ToggleButton- Uit'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-	Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/ToggleButton - Aan'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+    Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/ToggleButton- Uit'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+    Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/ToggleButton - Aan'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 } else {
-	Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/ToggleButton - Aan'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-	Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/ToggleButton- Uit'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+    Mobile.tap(findTestObject('AppWerkGroep/Widgets tab/ToggleButton - Aan'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+    Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Widgets tab/ToggleButton- Uit'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 }
 

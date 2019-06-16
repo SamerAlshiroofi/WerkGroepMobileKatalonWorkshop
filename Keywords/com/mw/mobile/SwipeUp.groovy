@@ -50,28 +50,28 @@ class SwipeUp {
 	 * @return true if element present, otherwise false
 	 */
 	@Keyword
-	
-	 scrolUp(){
 
-	device_Height = Mobile.getDeviceHeight() 
+	scrolUp(){
 
-		device_Width = Mobile.getDeviceWidth() 
+		device_Height = Mobile.getDeviceHeight()
 
-			int startX = device_Width / 2
+		device_Width = Mobile.getDeviceWidth()
 
-			int endX = startX
+		int startX = device_Width / 2
 
-			int startY = device_Height * 0.30
+		int endX = startX
 
-			int endY = device_Height * 0.70
-		
+		int startY = device_Height * 0.30
+
+		int endY = device_Height * 0.70
+
 
 		Mobile.swipe(startX, startY, endX, endY)
-		
-	//	Mobile.scrollToText('Salves Test app', FailureHandling.STOP_ON_FAILURE)
-		
-	//	Mobile.scrollToElement(findTestObject('AppWerkGroep/toolbar/topbar text'))
-	
+
+		//	Mobile.scrollToText('Salves Test app', FailureHandling.STOP_ON_FAILURE)
+
+		//	Mobile.scrollToElement(findTestObject('AppWerkGroep/toolbar/topbar text'))
+
 	}
 	/**
 	 * Get mobile driver for current session
@@ -80,7 +80,7 @@ class SwipeUp {
 	@Keyword
 	def WebDriver getCurrentSessionMobileDriver() {
 		return MobileDriverFactory.getDriver();
-		
+
 		//Mobile.scrollToElement(findTestObject('AppWerkGroep/toolbar/topbar text'))
 	}
 }
