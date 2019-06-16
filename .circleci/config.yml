@@ -7,7 +7,7 @@
         - checkout
         - run:
             name: Execute Katalon Studio Test Cards tab
-            command: katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)"
+            command: katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
         - store-test_results:
             path: ./report
         - store-artifacts:
@@ -25,7 +25,7 @@
         - run: npm test
         - run:
             name: Execute Katalon Studio Test Cards tab
-            command: katalon-execute.sh katalon  -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android"
+            command: katalon-execute.sh katalon  -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
         - store-test_results:
             path: ./report
         - store-artifacts:
@@ -38,7 +38,7 @@
           - checkout
           - run:
               name: Execute Katalon Studio Regression Cards tab test
-              command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test"
+              command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
           - store-test_results:
               path: ./reports/report
           - store-artifacts:
