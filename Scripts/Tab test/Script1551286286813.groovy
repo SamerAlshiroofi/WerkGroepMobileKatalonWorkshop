@@ -13,11 +13,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+'For loop'
+for (int i = 0; i < 3; i++) {
+	'Execute this test case 3 times'
+	WebUI.callTestCase(findTestCase('Test Cases/Widgets/Toggle Switch'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+}
+
 Mobile.waitForElementPresent(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
+'Get item\'s label Tab Dialog'
+itemTextTabDialog = Mobile.getText(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+'Verify if item\'s label is equal to "Dialog"'
+Mobile.verifyMatch(itemTextTabDialog, 'DIALOGS', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('AppWerkGroep/Dialogs tab/tab dialogs'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 

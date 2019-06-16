@@ -32,12 +32,22 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object url
+     
+    /**
+     * <p></p>
+     */
     public static Object UserName
      
     /**
      * <p></p>
      */
     public static Object Wachtwoord
+     
+    /**
+     * <p></p>
+     */
+    public static Object app
      
 
     static {
@@ -50,8 +60,10 @@ public class GlobalVariable {
             G_NotificationMessage = selectedVariables['G_NotificationMessage']
             G_AndroidApp = selectedVariables['G_AndroidApp']
             G_ShortTimeOut = selectedVariables['G_ShortTimeOut']
+            url = selectedVariables['url']
             UserName = selectedVariables['UserName']
             Wachtwoord = selectedVariables['Wachtwoord']
+            app = selectedVariables['app']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

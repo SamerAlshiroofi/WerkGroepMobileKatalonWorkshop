@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+//Mobile.closeApplication()
+
 WebUI.openBrowser('https://play-accept.primephonic.com/', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow()
@@ -27,7 +29,7 @@ WebUI.verifyTextPresent('My Music', false, FailureHandling.CONTINUE_ON_FAILURE)
 CurrentUrL = WebUI.getUrl(FailureHandling.CONTINUE_ON_FAILURE)
 
 'match current url with expected url\r\n'
-WebUI.verifyMatch(CurrentUrL, 'https://play-accept.primephonic.com/', false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyMatch(CurrentUrL, GlobalVariable.url, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 

@@ -70,5 +70,3 @@ Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameFi
 
 Mobile.closeApplication(FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.checkElement(findTestObject(null), 0)
-

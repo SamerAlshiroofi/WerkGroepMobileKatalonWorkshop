@@ -14,17 +14,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'maakt gebruik van Globale variabelen\r\n'
-not_run: Mobile.startApplication(GlobalVariable.G_AndroidApp, false, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
 
-not_run: Mobile.startApplication('kobiton-store:33069', false)
+'Samer account Kobiton'
+not_run: Mobile.startApplication('kobiton-store:33069', true)
 
 'supreet account'
-Mobile.startApplication('kobiton-store:33786', false)
-
-'Unlock screen'
-Mobile.unlockScreen(FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.startApplication('kobiton-store:33786', true)
 
 //if (false) {
 //    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
@@ -41,6 +39,13 @@ Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), Global
 'maakt gebruik van Globale variabelen'
 Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), GlobalVariable.Wachtwoord, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.clearText(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 0)
+
+Mobile.clearText(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), 0)
+
+'Herbruik bestaande methode'
+Login((GlobalVariable.UserName), (GlobalVariable.Wachtwoord))
+
 'send key'
 not_run: Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), '4455667889999', FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -52,4 +57,13 @@ Mobile.pressBack(FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/LoginScherm/LoginButton'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.tap(findTestObject('AppWerkGroep/LoginScherm/LoginButton'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+
+'Login methode'
+def Login (def userName, def password){
+	Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), userName)
+	
+	Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), password)
+	
+}
 

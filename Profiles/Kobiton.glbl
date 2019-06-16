@@ -17,6 +17,6 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'kobiton-store:33069'</initValue>
-      <name>G_AndroidApp</name>
+      <name>app</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -103,7 +103,7 @@
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -165,18 +165,18 @@
             </runConfigurationData>
             <runConfigurationId>Kobiton Device</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Mobile</groupName>
-            <profileName>default</profileName>
+            <profileName>Kobiton</profileName>
             <runConfigurationData>
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 985044,
+  &quot;id&quot;: 995811,
   &quot;udid&quot;: &quot;RF8M318YJ1F&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
@@ -193,7 +193,7 @@
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
-        &quot;version&quot;: &quot;74.0.3729.157&quot;
+        &quot;version&quot;: &quot;75.0.3770.89&quot;
       }
     ]
   },

@@ -17,7 +17,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'D:\\Mijn Documenten\\Salves\\WerkGroep Mobile\\KatalonAndroidTest\\MwApp.apk'</initValue>
-      <name>G_AndroidApp</name>
+      <name>app</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
