@@ -142,24 +142,24 @@
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 1006677,
-  &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
+  &quot;id&quot;: 17467,
+  &quot;udid&quot;: &quot;LGK45017f9812c&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
-    &quot;modelName&quot;: &quot;Moto Z3 Play&quot;,
-    &quot;deviceName&quot;: &quot;moto z3 play&quot;,
+    &quot;udid&quot;: &quot;LGK45017f9812c&quot;,
+    &quot;modelName&quot;: &quot;LG-K450&quot;,
+    &quot;deviceName&quot;: &quot;LG X power&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 1080,
-      &quot;height&quot;: 2160
+      &quot;width&quot;: 720,
+      &quot;height&quot;: 1280
     },
     &quot;platformName&quot;: &quot;Android&quot;,
-    &quot;platformVersion&quot;: &quot;8.1.0&quot;,
+    &quot;platformVersion&quot;: &quot;6.0.1&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
-        &quot;version&quot;: &quot;75.0.3770.67&quot;
+        &quot;version&quot;: &quot;73.0.3683.90&quot;
       }
     ]
   },
@@ -168,7 +168,7 @@
   &quot;isHidden&quot;: false,
   &quot;isOnline&quot;: true,
   &quot;isFavorite&quot;: true,
-  &quot;isCloud&quot;: false
+  &quot;isCloud&quot;: true
 }</value>
                </entry>
             </runConfigurationData>
