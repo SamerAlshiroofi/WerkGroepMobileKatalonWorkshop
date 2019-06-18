@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>677a4b35-d68f-4f50-8e7d-2a8f6d7ddeae</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Cards tab/like van tegel</testCaseId>
    </testCaseLink>
    <testCaseLink>
