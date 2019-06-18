@@ -3,6 +3,9 @@
    <description></description>
    <name>Login</name>
    <tag></tag>
-   <comment></comment>
+   <comment>maakt gebruik van Globale variabelen
+
+Samer account Kobiton
+Login methode</comment>
    <testCaseGuid>0d9f0800-1e2f-4414-95c1-ba89879d954f</testCaseGuid>
 </TestCaseEntity>
