@@ -6,7 +6,7 @@
       steps:
         - checkout
         - run:
-            name: Execute Katalon Studio Test Cards tab
+            name: Execute Katalon Studio Test on Browser
             command: katalon-execute.sh katalon -testSuitePath="Test Suites/WebTest" -executionProfile="default" -browserType="Chrome (headless)" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
         - store-test_results:
             path: ./report
@@ -24,7 +24,7 @@
         - run: npm ci
         - run: npm test
         - run:
-            name: Execute Katalon Studio Test Cards tab
+            name: Execute Katalon Studio Test Cards tab local device
             command: katalon-execute.sh katalon  -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -executionProfile="Regressie" -deviceId="8C6X1JTMN" -browserType="Android" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
         - store-test_results:
             path: ./report
@@ -37,12 +37,26 @@
         steps:
           - checkout
           - run:
-              name: Execute Katalon Studio Regression Cards tab test
+              name: Execute Katalon Studio Regression Cards tab test local cloud device
               command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuiteCollectionPath="Test Suites/Regression Cards tab test" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
           - store-test_results:
               path: ./reports/report
           - store-artifacts:
               path: ./reports/report
+              
+    Run_test_suite_collection4:
+        docker:
+          - image: katalonstudio/katalon
+        steps:
+          - checkout
+          - run:
+              name: Execute Katalon Studio Regression Cards tab test Kobiton device
+              command: katalon-execute.sh katalon -retry=1 -retryFailedTestCases=true -testSuitePath="Test Suites/Test Cards tab" -kobitonDeviceId="17467" -executionProfile="Kobiton" -browserType="Kobiton Device" -apiKey=73674265-0ea5-40d1-bb2a-2606e9c06e7a
+          - store-test_results:
+              path: ./reports/report
+          - store-artifacts:
+              path: ./reports/report          
+
             
   workflows:
     version: 2
@@ -62,6 +76,10 @@
             filters:
               branches:
                 only: master
-
-
+        - Run_test_suite_collection4:
+            requires:
+              - Run_test_suite1
+            filters:
+              branches:
+                only: master
             

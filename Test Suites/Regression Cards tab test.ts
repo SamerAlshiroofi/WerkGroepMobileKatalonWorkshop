@@ -8,15 +8,6 @@
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
-            <groupName>Custom</groupName>
-            <profileName>SauceLabs</profileName>
-            <runConfigurationId>saucelabs_default</runConfigurationId>
-         </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
             <groupName>Mobile</groupName>
             <profileName>Regressie</profileName>
             <runConfigurationData>
@@ -174,7 +165,7 @@
             </runConfigurationData>
             <runConfigurationId>Kobiton Device</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
