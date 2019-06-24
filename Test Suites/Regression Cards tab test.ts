@@ -133,20 +133,20 @@
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 17467,
-  &quot;udid&quot;: &quot;LGK45017f9812c&quot;,
+  &quot;id&quot;: 82932,
+  &quot;udid&quot;: &quot;c4b6fa6b&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;LGK45017f9812c&quot;,
-    &quot;modelName&quot;: &quot;LG-K450&quot;,
-    &quot;deviceName&quot;: &quot;LG X power&quot;,
+    &quot;udid&quot;: &quot;c4b6fa6b&quot;,
+    &quot;modelName&quot;: &quot;Lenovo YT-X703F&quot;,
+    &quot;deviceName&quot;: &quot;YOGA Tab 3 Plus&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 720,
-      &quot;height&quot;: 1280
+      &quot;width&quot;: 1600,
+      &quot;height&quot;: 2560
     },
     &quot;platformName&quot;: &quot;Android&quot;,
-    &quot;platformVersion&quot;: &quot;6.0.1&quot;,
+    &quot;platformVersion&quot;: &quot;7.1.1&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
