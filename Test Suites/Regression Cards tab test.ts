@@ -90,20 +90,20 @@
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 995811,
-  &quot;udid&quot;: &quot;RF8M318YJ1F&quot;,
+  &quot;id&quot;: 1006783,
+  &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;RF8M318YJ1F&quot;,
-    &quot;modelName&quot;: &quot;SM-G973F&quot;,
-    &quot;deviceName&quot;: &quot;Galaxy S10&quot;,
+    &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
+    &quot;modelName&quot;: &quot;Moto Z3 Play&quot;,
+    &quot;deviceName&quot;: &quot;moto z3 play&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 1440,
-      &quot;height&quot;: 3040
+      &quot;width&quot;: 1080,
+      &quot;height&quot;: 2160
     },
     &quot;platformName&quot;: &quot;Android&quot;,
-    &quot;platformVersion&quot;: &quot;9&quot;,
+    &quot;platformVersion&quot;: &quot;8.1.0&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
@@ -165,7 +165,7 @@
             </runConfigurationData>
             <runConfigurationId>Kobiton Device</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
