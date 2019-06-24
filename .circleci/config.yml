@@ -15,7 +15,6 @@
     Run_test_suite2:
       docker:
         - image: katalonstudio/katalon
-        - image: circleci/node:8
       steps:
         - checkout
         - run: npm ci

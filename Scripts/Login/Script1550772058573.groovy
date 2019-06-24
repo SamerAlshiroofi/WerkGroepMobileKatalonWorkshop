@@ -18,28 +18,29 @@ not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONT
 
 //not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
 
-String kobitonServerUrl = "https://Gmail1:cfb7a268-0eee-485b-89c7-13ac92e489cb@api.kobiton.com/wd/hub";
-DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("sessionName", "Automation test session");
-capabilities.setCapability("sessionDescription", "Kobiton cloud");
-capabilities.setCapability("deviceOrientation", "portrait");
-capabilities.setCapability("captureScreenshots", true);
-capabilities.setCapability("browserName", "chrome");
-capabilities.setCapability("deviceGroup", "KOBITON");
-capabilities.setCapability("deviceName", "LG X power");
-capabilities.setCapability("platformVersion", "6.0.1");
-capabilities.setCapability("platformName", "Android");
-capabilities.setCapability('app', 'kobiton-store:10717')
-AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(kobitonServerUrl))
+'kobiton desired capabilities'
+//String kobitonServerUrl = "https://Gmail1:cfb7a268-0eee-485b-89c7-13ac92e489cb@api.kobiton.com/wd/hub";
+//DesiredCapabilities capabilities = new DesiredCapabilities();
+//capabilities.setCapability("sessionName", "Automation test session");
+//capabilities.setCapability("sessionDescription", "Kobiton cloud");
+//capabilities.setCapability("deviceOrientation", "portrait");
+//capabilities.setCapability("captureScreenshots", true);
+//capabilities.setCapability("browserName", "chrome");
+//capabilities.setCapability("deviceGroup", "KOBITON");
+//capabilities.setCapability("deviceName", "moto z3 play");
+//capabilities.setCapability("platformVersion", "8.1.0");
+//capabilities.setCapability("platformName", "Android");
+//capabilities.setCapability('app', 'kobiton-store:34549')
+//AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(kobitonServerUrl))
 		
 'Samer Salves account Kobiton'
 not_run: Mobile.startApplication('kobiton-store:33069', false)
 
 'Samer Gmail account Kobiton'
-not_run: Mobile.startApplication('kobiton-store:34549')
+Mobile.startApplication('kobiton-store:v36723', false)
 
 'supreet account Kobiton'
-not_run: Mobile.startApplication('kobiton-store:33786', true)
+not_run: Mobile.startApplication('kobiton-store:33786', false)
 
 //if (false) {
 //    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
