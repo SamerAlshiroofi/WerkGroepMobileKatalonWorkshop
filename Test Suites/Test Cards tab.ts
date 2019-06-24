@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>677a4b35-d68f-4f50-8e7d-2a8f6d7ddeae</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Cards tab/like van tegel</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -21,5 +21,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Cards tab/press action buttons 1 and 2</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5cfe9454-0030-4d1a-b8b4-a970d9746b7b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Cards tab/press action buttonas 1 and 2 BDD</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

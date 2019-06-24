@@ -13,11 +13,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-G935F (Android 7.0)</value>
+                  <value>samsung SM-G973F (Android 9)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>ad06160310731729e4</value>
+                  <value>RF8M318YJ1F</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -32,11 +32,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-G950F (Android 9)</value>
+                  <value>motorola Moto Z3 Play (Android 8.1.0)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>ce051715b179ee1002</value>
+                  <value>ZY224ZSNZ2</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -70,11 +70,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-G973F (Android 9)</value>
+                  <value>samsung SM-G950F (Android 9)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>RF8M318YJ1F</value>
+                  <value>ce051715b179ee1002</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -90,20 +90,20 @@
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 1006783,
-  &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
+  &quot;id&quot;: 995811,
+  &quot;udid&quot;: &quot;RF8M318YJ1F&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
-    &quot;modelName&quot;: &quot;Moto Z3 Play&quot;,
-    &quot;deviceName&quot;: &quot;moto z3 play&quot;,
+    &quot;udid&quot;: &quot;RF8M318YJ1F&quot;,
+    &quot;modelName&quot;: &quot;SM-G973F&quot;,
+    &quot;deviceName&quot;: &quot;Galaxy S10&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 1080,
-      &quot;height&quot;: 2160
+      &quot;width&quot;: 1440,
+      &quot;height&quot;: 3040
     },
     &quot;platformName&quot;: &quot;Android&quot;,
-    &quot;platformVersion&quot;: &quot;8.1.0&quot;,
+    &quot;platformVersion&quot;: &quot;9&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
