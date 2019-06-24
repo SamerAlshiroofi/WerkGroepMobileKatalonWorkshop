@@ -17,8 +17,23 @@ import internal.GlobalVariable as GlobalVariable
 not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 //not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
+
+String kobitonServerUrl = "https://Gmail1:cfb7a268-0eee-485b-89c7-13ac92e489cb@api.kobiton.com/wd/hub";
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability("sessionName", "Automation test session");
+capabilities.setCapability("sessionDescription", "Kobiton cloud");
+capabilities.setCapability("deviceOrientation", "portrait");
+capabilities.setCapability("captureScreenshots", true);
+capabilities.setCapability("browserName", "chrome");
+capabilities.setCapability("deviceGroup", "KOBITON");
+capabilities.setCapability("deviceName", "LG X power");
+capabilities.setCapability("platformVersion", "6.0.1");
+capabilities.setCapability("platformName", "Android");
+capabilities.setCapability('app', 'kobiton-store:10717')
+AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(kobitonServerUrl))
+		
 'Samer Salves account Kobiton'
-Mobile.startApplication('kobiton-store:33069', true)
+not_run: Mobile.startApplication('kobiton-store:33069', false)
 
 'Samer Gmail account Kobiton'
 not_run: Mobile.startApplication('kobiton-store:34549')

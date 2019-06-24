@@ -51,6 +51,7 @@ jobs:
     Run_test_suite_collection3:
         docker:
           - image: katalonstudio/katalon
+          - image: circleci/node:latest
         steps:
           - checkout
           - run:
