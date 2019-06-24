@@ -64,7 +64,7 @@
               branches:
                 only: Develop
         - Run_test_suite2:
-        	requires:
+            requires:
               - Run_test_suite1
             filters:
               branches:
