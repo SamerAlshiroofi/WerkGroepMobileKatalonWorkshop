@@ -14,31 +14,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'maakt gebruik van Globale variabelen\r\n'
-not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-//not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
-'Samer Salves account Kobiton'
-not_run: Mobile.startApplication('kobiton-store:33069', false)
-
-'Samer Salves account iOS App Kobiton'
-not_run: Mobile.startApplication('kobiton-store:35028', false)
-
-'Samer Gmail account Kobiton'
-not_run: Mobile.startApplication('kobiton-store:v36723', false)
-
-'supreet account Kobiton'
-Mobile.startApplication('kobiton-store:33786', false)
-
-'supreet account iOS App Kobiton'
-not_run: Mobile.startApplication('kobiton-store:33786', false)
-
-//if (false) {
-//    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-//} else if (true) {
-//    WebUI.callTestCase(findTestCase('Test Cases/Log out'), 0)
-//} else {
-//    Mobile.pressHome()
-//}
+if (true) {
+    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
+} else if (true) {
+    Mobile.closeApplication(FailureHandling.CONTINUE_ON_FAILURE)
+} else {
+    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), GlobalVariable.UserName, FailureHandling.CONTINUE_ON_FAILURE)
+}
 Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
 
 'maakt gebruik van Globale variabelen'
@@ -69,8 +53,8 @@ Mobile.tap(findTestObject('AppWerkGroep/LoginScherm/LoginButton'), 15, FailureHa
 'Login methode'
 
 def Login(def userName, def password) {
-    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), userName)
+    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), GlobalVariable.UserName)
 
-    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), password)
+    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), 'password')
 }
 

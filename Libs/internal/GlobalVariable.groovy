@@ -35,16 +35,6 @@ public class GlobalVariable {
     public static Object url
      
     /**
-     * <p></p>
-     */
-    public static Object UserName
-     
-    /**
-     * <p></p>
-     */
-    public static Object Wachtwoord
-     
-    /**
      * <p>Profile Kobiton : Samer Salves account Kobiton</p>
      */
     public static Object SamerAndroidApp
@@ -69,6 +59,16 @@ public class GlobalVariable {
      */
     public static Object app
      
+    /**
+     * <p></p>
+     */
+    public static Object UserName
+     
+    /**
+     * <p></p>
+     */
+    public static Object Wachtwoord
+     
 
     static {
         try {
@@ -81,13 +81,13 @@ public class GlobalVariable {
             G_AndroidApp = selectedVariables['G_AndroidApp']
             G_ShortTimeOut = selectedVariables['G_ShortTimeOut']
             url = selectedVariables['url']
-            UserName = selectedVariables['UserName']
-            Wachtwoord = selectedVariables['Wachtwoord']
             SamerAndroidApp = selectedVariables['SamerAndroidApp']
             SupreetAndroidApp = selectedVariables['SupreetAndroidApp']
             SupreetiOSApp = selectedVariables['SupreetiOSApp']
             GmailiOSApp = selectedVariables['GmailiOSApp']
             app = selectedVariables['app']
+            UserName = selectedVariables['UserName']
+            Wachtwoord = selectedVariables['Wachtwoord']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

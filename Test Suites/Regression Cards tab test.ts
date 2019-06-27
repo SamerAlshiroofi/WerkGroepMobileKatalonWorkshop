@@ -3,7 +3,7 @@
    <description></description>
    <name>Regression Cards tab test</name>
    <tag></tag>
-   <executionMode>PARALLEL</executionMode>
+   <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>5</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
@@ -22,7 +22,7 @@
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -104,25 +104,25 @@
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Mobile</groupName>
-            <profileName>Kobiton</profileName>
+            <profileName>Regressie</profileName>
             <runConfigurationData>
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 17413,
-  &quot;udid&quot;: &quot;035fd135215d3525&quot;,
+  &quot;id&quot;: 17385,
+  &quot;udid&quot;: &quot;5B24000911&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;035fd135215d3525&quot;,
-    &quot;modelName&quot;: &quot;Nexus 5&quot;,
-    &quot;deviceName&quot;: &quot;Nexus 5&quot;,
+    &quot;udid&quot;: &quot;5B24000911&quot;,
+    &quot;modelName&quot;: &quot;Pixel C&quot;,
+    &quot;deviceName&quot;: &quot;Pixel C&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 1080,
-      &quot;height&quot;: 1920
+      &quot;width&quot;: 2560,
+      &quot;height&quot;: 1800
     },
     &quot;platformName&quot;: &quot;Android&quot;,
-    &quot;platformVersion&quot;: &quot;5.1.1&quot;,
+    &quot;platformVersion&quot;: &quot;8.1.0&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
@@ -141,7 +141,7 @@
             </runConfigurationData>
             <runConfigurationId>Kobiton Device</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>

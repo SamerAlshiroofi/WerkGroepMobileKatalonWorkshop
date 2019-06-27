@@ -1,3 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/sample
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: npm-restore-deps
+          command: npm install
+          working_directory: samples/automation-test
+      - run:
+          name: app-auto-testing
+          command: npm run automation-test-script
+          working_directory: samples/automation-test
+
   version: 2
   jobs:
     Run_test_suite1:
@@ -15,6 +32,10 @@
     Run_test_suite2:
       docker:
         - image: katalonstudio/katalon
+        - image: circleci/node:8
+        
+      working_directory: ~/repo
+      
       steps:
         - checkout
         - run: npm ci
@@ -30,6 +51,7 @@
     Run_test_suite_collection3:
         docker:
           - image: katalonstudio/katalon
+          - image: circleci/node:latest
         steps:
           - checkout
           - run:
@@ -61,19 +83,21 @@
         - Run_test_suite1:
             filters:
               branches:
-                only: Develop
+                only: master
         - Run_test_suite2:
+            filters:
+              branches:
+                only: master
+        - Run_test_suite_collection3:
             requires:
               - Run_test_suite1
             filters:
               branches:
-                only: Develop
-        - Run_test_suite_collection3:
-            filters:
-              branches:
-                only: Develop
+                only: master
         - Run_test_suite_collection4:
+            requires:
+              - Run_test_suite1
             filters:
               branches:
-                only: Develop
+                only: master
             

@@ -5,16 +5,6 @@
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'12345678'</initValue>
-      <name>UserName</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'qwertyuio'</initValue>
-      <name>Wachtwoord</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description>Samer Salves account Kobiton</description>
       <initValue>'kobiton-store:33069'</initValue>
       <name>SamerAndroidApp</name>

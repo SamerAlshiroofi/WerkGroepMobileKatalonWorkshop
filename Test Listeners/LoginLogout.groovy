@@ -33,6 +33,7 @@ class LoginLogout {
 			println testCaseContext.getTestCaseId()
 			println testCaseContext.getTestCaseVariables()
 			WebUI.callTestCase(findTestCase("Test Cases/Login"), [:])
+		//	WebUI.callTestCase(findTestCase("Test Cases/LoginKobiton"), [:])
 		}
 	
 		/**

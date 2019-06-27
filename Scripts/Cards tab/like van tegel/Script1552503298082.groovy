@@ -17,8 +17,6 @@ Mobile.tap(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandlin
 
 Mobile.scrollToText('Subtitle here', FailureHandling.CONTINUE_ON_FAILURE)
 
-//Scroll.scrollListToElementWithText(findTestObject('AppWerkGroep/Cards tab/card 2'), 0)
-//Scroll.scrollListToElementWithText('Michigan', 1)
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/card 2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/action button 2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
@@ -29,8 +27,6 @@ Mobile.tap(findTestObject('AppWerkGroep/Cards tab/action button 2'), 0, FailureH
 
 Mobile.scrollToText('Details here', FailureHandling.CONTINUE_ON_FAILURE)
 
-//Scroll.scrollListToElementWithText(findTestObject('AppWerkGroep/Cards tab/card 2'), 0)
-//Scroll.scrollListToElementWithText('Michigan', 1)
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/card 3'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/card 4'), 0, FailureHandling.CONTINUE_ON_FAILURE)

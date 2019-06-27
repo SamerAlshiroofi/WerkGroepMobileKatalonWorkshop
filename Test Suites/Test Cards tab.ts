@@ -19,7 +19,7 @@
    <testCaseLink>
       <guid>da4a424e-d2c1-4b79-8feb-40148d0e9b48</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Cards tab/press action buttons 1 and 2</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -27,5 +27,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Cards tab/press action buttonas 1 and 2 BDD</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>55f03eb3-daa7-4637-af65-6a8b1f79ab7a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Tab test</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
