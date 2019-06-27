@@ -15,8 +15,23 @@
       <name>Wachtwoord</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Samer Salves account Kobiton</description>
       <initValue>'kobiton-store:33069'</initValue>
-      <name>app</name>
+      <name>SamerAndroidApp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Supreet Android app</description>
+      <initValue>'kobiton-store:33786'</initValue>
+      <name>SupreetAndroidApp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Supreet iOS app</description>
+      <initValue>'kobiton-store:33786'</initValue>
+      <name>SupreetiOSApp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Gmail iOS app</description>
+      <initValue>'kobiton-store:35028'</initValue>
+      <name>GmailiOSApp</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

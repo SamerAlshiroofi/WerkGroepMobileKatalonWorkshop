@@ -14,32 +14,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'maakt gebruik van Globale variabelen\r\n'
-not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 //not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
-
-'kobiton desired capabilities'
-//String kobitonServerUrl = "https://Gmail1:cfb7a268-0eee-485b-89c7-13ac92e489cb@api.kobiton.com/wd/hub";
-//DesiredCapabilities capabilities = new DesiredCapabilities();
-//capabilities.setCapability("sessionName", "Automation test session");
-//capabilities.setCapability("sessionDescription", "Kobiton cloud");
-//capabilities.setCapability("deviceOrientation", "portrait");
-//capabilities.setCapability("captureScreenshots", true);
-//capabilities.setCapability("browserName", "chrome");
-//capabilities.setCapability("deviceGroup", "KOBITON");
-//capabilities.setCapability("deviceName", "moto z3 play");
-//capabilities.setCapability("platformVersion", "8.1.0");
-//capabilities.setCapability("platformName", "Android");
-//capabilities.setCapability('app', 'kobiton-store:34549')
-//AppiumDriverManager.createMobileDriver(MobileDriverType.ANDROID_DRIVER, capabilities, new URL(kobitonServerUrl))
-		
 'Samer Salves account Kobiton'
 not_run: Mobile.startApplication('kobiton-store:33069', false)
 
+'Samer Salves account iOS App Kobiton'
+not_run: Mobile.startApplication('kobiton-store:35028', false)
+
 'Samer Gmail account Kobiton'
-Mobile.startApplication('kobiton-store:v36723', false)
+not_run: Mobile.startApplication('kobiton-store:v36723', false)
 
 'supreet account Kobiton'
+not_run: Mobile.startApplication('kobiton-store:33786', false)
+
+'supreet account iOS App Kobiton'
 not_run: Mobile.startApplication('kobiton-store:33786', false)
 
 //if (false) {

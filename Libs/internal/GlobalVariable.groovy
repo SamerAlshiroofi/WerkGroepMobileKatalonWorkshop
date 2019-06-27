@@ -45,6 +45,26 @@ public class GlobalVariable {
     public static Object Wachtwoord
      
     /**
+     * <p>Profile Kobiton : Samer Salves account Kobiton</p>
+     */
+    public static Object SamerAndroidApp
+     
+    /**
+     * <p>Profile Kobiton : Supreet Android app</p>
+     */
+    public static Object SupreetAndroidApp
+     
+    /**
+     * <p>Profile Kobiton : Supreet iOS app</p>
+     */
+    public static Object SupreetiOSApp
+     
+    /**
+     * <p>Profile Kobiton : Gmail iOS app</p>
+     */
+    public static Object GmailiOSApp
+     
+    /**
      * <p></p>
      */
     public static Object app
@@ -63,6 +83,10 @@ public class GlobalVariable {
             url = selectedVariables['url']
             UserName = selectedVariables['UserName']
             Wachtwoord = selectedVariables['Wachtwoord']
+            SamerAndroidApp = selectedVariables['SamerAndroidApp']
+            SupreetAndroidApp = selectedVariables['SupreetAndroidApp']
+            SupreetiOSApp = selectedVariables['SupreetiOSApp']
+            GmailiOSApp = selectedVariables['GmailiOSApp']
             app = selectedVariables['app']
             
         } catch (Exception e) {
