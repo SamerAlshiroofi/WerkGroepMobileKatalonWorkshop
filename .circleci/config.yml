@@ -103,7 +103,7 @@
                 only: Develop                
         - Run_test_suite6:
             requires:
-              - Run_test_suite1
+              - Run_test_suite5
             filters:
               branches:
                 only: Develop
