@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'maakt gebruik van Globale variabelen\r\n'
-Mobile.startApplication(GlobalVariable.SupreetAndroidApp, false, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 //not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
 'Samer Salves account Kobiton'
@@ -27,7 +27,7 @@ not_run: Mobile.startApplication('kobiton-store:35028', false)
 not_run: Mobile.startApplication('kobiton-store:v36723', false)
 
 'supreet account Kobiton'
-not_run: Mobile.startApplication('kobiton-store:33786', false)
+Mobile.startApplication('kobiton-store:33786', false)
 
 'supreet account iOS App Kobiton'
 not_run: Mobile.startApplication('kobiton-store:33786', false)
