@@ -4,7 +4,7 @@
    <name>Regression Cards tab test</name>
    <tag></tag>
    <executionMode>SEQUENTIAL</executionMode>
-   <maxConcurrentInstances>5</maxConcurrentInstances>
+   <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -13,11 +13,49 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-G950F (Android 9)</value>
+                  <value>motorola Moto Z3 Play (Android 8.1.0)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>ce051715b179ee1002</value>
+                  <value>ZY224ZSNZ2</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
+            <profileName>Regressie</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>Google Pixel 3 (Android 9)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>8C6X1JTMN</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
+            <profileName>Regressie</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>samsung SM-A920F (Android 8.0.0)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>2c3379889f1d7ece</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -41,7 +79,7 @@
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -51,54 +89,16 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>Google Pixel 3 (Android 9)</value>
+                  <value>samsung SM-G950F (Android 9)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>8C6X1JTMN</value>
+                  <value>ce051715b179ee1002</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
-            <groupName>Mobile</groupName>
-            <profileName>Regressie</profileName>
-            <runConfigurationData>
-               <entry>
-                  <key>deviceName</key>
-                  <value>motorola Moto Z3 Play (Android 8.1.0)</value>
-               </entry>
-               <entry>
-                  <key>deviceId</key>
-                  <value>ZY224ZSNZ2</value>
-               </entry>
-            </runConfigurationData>
-            <runConfigurationId>Android</runConfigurationId>
-         </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
-            <groupName>Mobile</groupName>
-            <profileName>Regressie</profileName>
-            <runConfigurationData>
-               <entry>
-                  <key>deviceName</key>
-                  <value>samsung SM-A920F (Android 8.0.0)</value>
-               </entry>
-               <entry>
-                  <key>deviceId</key>
-                  <value>2c3379889f1d7ece</value>
-               </entry>
-            </runConfigurationData>
-            <runConfigurationId>Android</runConfigurationId>
-         </configuration>
-         <runEnabled>false</runEnabled>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>

@@ -31,7 +31,7 @@
    <testCaseLink>
       <guid>55f03eb3-daa7-4637-af65-6a8b1f79ab7a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Tab test</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

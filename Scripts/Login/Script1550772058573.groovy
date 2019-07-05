@@ -16,13 +16,14 @@ import internal.GlobalVariable as GlobalVariable
 'maakt gebruik van Globale variabelen\r\n'
 Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-if (true) {
-    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
-} else if (true) {
-    Mobile.closeApplication(FailureHandling.CONTINUE_ON_FAILURE)
-} else {
-    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), GlobalVariable.UserName, FailureHandling.CONTINUE_ON_FAILURE)
-}
+//if (true) {
+//    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
+//} else if (true) {
+//    Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
+//} else {
+//    Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'), GlobalVariable.UserName, FailureHandling.CONTINUE_ON_FAILURE)
+//}
+
 Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
 
 'maakt gebruik van Globale variabelen'
@@ -44,7 +45,7 @@ not_run: Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/userNameField'
 'send key'
 not_run: Mobile.sendKeys(findTestObject('AppWerkGroep/LoginScherm/wachtwoordField'), 'dasdasdas', FailureHandling.CONTINUE_ON_FAILURE)
 
-Mobile.pressBack(FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.hideKeyboard(FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('AppWerkGroep/LoginScherm/LoginButton'), 15, FailureHandling.CONTINUE_ON_FAILURE)
 
