@@ -14,19 +14,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'maakt gebruik van Globale variabelen\r\n'
+Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run:Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 //not_run: CustomKeywords.'com.mw.mobile.InstallAndStart'(findTestObject(null), '')
 'Samer Salves account Kobiton'
-
-not_run:Mobile.startApplication('kobiton-store:33069', true)
+not_run: Mobile.startApplication('kobiton-store:33069', true)
 
 'Samer Gmail account Kobiton'
-
-Mobile.startApplication('kobiton-store:34549', true)
+not_run: Mobile.startApplication('kobiton-store:34549', true)
 
 'supreet account Kobiton'
 not_run: Mobile.startApplication('kobiton-store:33786', true)
+
 //if (false) {
 //    Mobile.verifyElementNotVisible(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 //} else if (true) {
@@ -34,7 +33,6 @@ not_run: Mobile.startApplication('kobiton-store:33786', true)
 //} else {
 //    Mobile.pressHome()
 //}
-
 Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 15, FailureHandling.CONTINUE_ON_FAILURE)
 
 'maakt gebruik van Globale variabelen'

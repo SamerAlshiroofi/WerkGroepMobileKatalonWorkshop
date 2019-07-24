@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>days</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>5bffe454-2ffa-4b5c-9f7f-2839f8625f7f</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>%27AppWerkGroep%2FWidgets+tab%2FDatePickerDay+-+1%27 Ma+1+jul.</data>
+   <data>2 Di+2+jul.</data>
+   <data>3 Wo+3+jul.</data>
+   <data>4 Do+4+jul.</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>day</name>
+      <size>4</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>date</name>
+      <size>4</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

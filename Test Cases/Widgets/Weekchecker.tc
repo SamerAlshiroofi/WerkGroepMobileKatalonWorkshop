@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Weekchecker</name>
+   <tag>Widget</tag>
+   <comment></comment>
+   <testCaseGuid>8176ff7c-9fe2-450b-85bf-7be9e50e32c7</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('days')</defaultValue>
+      <description></description>
+      <id>ab1e3c9e-1daf-4c1a-a477-783a31a77f83</id>
+      <masked>false</masked>
+      <name>day</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('days')</defaultValue>
+      <description></description>
+      <id>c009b0b3-635f-4148-924f-4417af724c9c</id>
+      <masked>false</masked>
+      <name>date</name>
+   </variable>
+</TestCaseEntity>

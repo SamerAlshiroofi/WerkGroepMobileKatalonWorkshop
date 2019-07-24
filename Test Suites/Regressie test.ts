@@ -13,11 +13,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>Google Pixel 3 (Android 9)</value>
+                  <value>OnePlus ONEPLUS A3003 (Android 9)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>8C6X1JTMN</value>
+                  <value>b7fc0b2a</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -60,7 +60,7 @@
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Test Widgets tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>

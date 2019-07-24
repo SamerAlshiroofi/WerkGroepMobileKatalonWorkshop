@@ -43,6 +43,6 @@ class LoginLogout {
 		def sampleAfterTestCase(TestCaseContext testCaseContext) {
 			println testCaseContext.getTestCaseId()
 			println testCaseContext.getTestCaseStatus()
-			WebUI.callTestCase(findTestCase("Test Cases/Log out"), [:])
+		//	WebUI.callTestCase(findTestCase("Test Cases/Log out"), [:])
 		}
 }
