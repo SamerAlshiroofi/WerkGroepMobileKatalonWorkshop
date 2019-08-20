@@ -32,8 +32,8 @@ class LoginLogout {
 		def sampleBeforeTestCase(TestCaseContext testCaseContext) {
 			println testCaseContext.getTestCaseId()
 			println testCaseContext.getTestCaseVariables()
-			WebUI.callTestCase(findTestCase("Test Cases/Login"), [:])
-		//	WebUI.callTestCase(findTestCase("Test Cases/LoginKobiton"), [:])
+		//	WebUI.callTestCase(findTestCase("Test Cases/Login"), [:])
+			WebUI.callTestCase(findTestCase("Test Cases/LoginKobiton"), [:])
 		}
 	
 		/**

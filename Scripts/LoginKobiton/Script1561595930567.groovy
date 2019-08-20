@@ -17,10 +17,10 @@ import internal.GlobalVariable as GlobalVariable
 not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 'supreet account Kobiton'
-Mobile.startApplication('kobiton-store:33786', false)
+not_run: Mobile.startApplication('kobiton-store:33786', false)
 
 'Samer Salves account Kobiton'
-not_run: Mobile.startApplication('kobiton-store:33069', false)
+Mobile.startApplication('kobiton-store:33069', false)
 
 'Samer Salves account iOS App Kobiton'
 not_run: Mobile.startApplication('kobiton-store:35028', false)
