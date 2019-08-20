@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>WebTest</name>
+   <name>BDD</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>samer.alshiroofi@salves.nl;</mailRecipient>
+   <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>10</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>ef0211b0-1bbd-4ce6-9484-901848898c9c</testSuiteGuid>
+   <testSuiteGuid>07164f53-4d39-4487-85eb-580540bed4c3</testSuiteGuid>
    <testCaseLink>
-      <guid>f7278bd8-6e7f-4b26-bf6c-49e7107fc07a</guid>
+      <guid>03e17ab6-d39f-4331-b7f8-0b7f5fae008e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Web test</testCaseId>
+      <testCaseId>Test Cases/BDD logout</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

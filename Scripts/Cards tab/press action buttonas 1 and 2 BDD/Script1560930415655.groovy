@@ -13,15 +13,5 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.tap(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/action button 1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.verifyElementVisible(findTestObject('AppWerkGroep/Cards tab/action button 2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('AppWerkGroep/Cards tab/action button 1'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-Mobile.tap(findTestObject('AppWerkGroep/Cards tab/action button 2'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-
-
+CucumberKW.runFeatureFile('Include/features/press action one and two.feature')
 

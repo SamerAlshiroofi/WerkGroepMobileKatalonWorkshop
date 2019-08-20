@@ -13,30 +13,11 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
-                  <value>samsung SM-G935F (Android 7.0)</value>
+                  <value>motorola Moto Z3 Play (Android 8.1.0)</value>
                </entry>
                <entry>
                   <key>deviceId</key>
-                  <value>ad06160310731729e4</value>
-               </entry>
-            </runConfigurationData>
-            <runConfigurationId>Android</runConfigurationId>
-         </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
-            <groupName>Mobile</groupName>
-            <profileName>Regressie</profileName>
-            <runConfigurationData>
-               <entry>
-                  <key>deviceName</key>
-                  <value>samsung SM-G950F (Android 9)</value>
-               </entry>
-               <entry>
-                  <key>deviceId</key>
-                  <value>ce051715b179ee1002</value>
+                  <value>ZY224ZSNZ2</value>
                </entry>
             </runConfigurationData>
             <runConfigurationId>Android</runConfigurationId>
@@ -70,6 +51,25 @@
             <runConfigurationData>
                <entry>
                   <key>deviceName</key>
+                  <value>samsung SM-A920F (Android 8.0.0)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>2c3379889f1d7ece</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>false</runEnabled>
+         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
+            <profileName>Regressie</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
                   <value>samsung SM-G973F (Android 9)</value>
                </entry>
                <entry>
@@ -85,29 +85,48 @@
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Mobile</groupName>
+            <profileName>Regressie</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>samsung SM-G950F (Android 9)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>ce051715b179ee1002</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>false</runEnabled>
+         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
             <profileName>Kobiton</profileName>
             <runConfigurationData>
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 1006783,
-  &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
+  &quot;id&quot;: 1152014,
+  &quot;udid&quot;: &quot;ce0218225d81760902&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;ZY224ZSNZ2&quot;,
-    &quot;modelName&quot;: &quot;Moto Z3 Play&quot;,
-    &quot;deviceName&quot;: &quot;moto z3 play&quot;,
+    &quot;udid&quot;: &quot;ce0218225d81760902&quot;,
+    &quot;modelName&quot;: &quot;SM-G950F&quot;,
+    &quot;deviceName&quot;: &quot;Galaxy S8&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 1080,
-      &quot;height&quot;: 2160
+      &quot;width&quot;: 1440,
+      &quot;height&quot;: 2960
     },
     &quot;platformName&quot;: &quot;Android&quot;,
-    &quot;platformVersion&quot;: &quot;8.1.0&quot;,
+    &quot;platformVersion&quot;: &quot;9&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
-        &quot;version&quot;: &quot;75.0.3770.89&quot;
+        &quot;version&quot;: &quot;76.0.3809.89&quot;
       }
     ]
   },
@@ -122,7 +141,7 @@
             </runConfigurationData>
             <runConfigurationId>Kobiton Device</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
@@ -133,24 +152,24 @@
                <entry>
                   <key>kobitonDevice</key>
                   <value>{
-  &quot;id&quot;: 17467,
-  &quot;udid&quot;: &quot;LGK45017f9812c&quot;,
+  &quot;id&quot;: 82907,
+  &quot;udid&quot;: &quot;420019a6fcbe6433&quot;,
   &quot;isBooked&quot;: false,
   &quot;capabilities&quot;: {
-    &quot;udid&quot;: &quot;LGK45017f9812c&quot;,
-    &quot;modelName&quot;: &quot;LG-K450&quot;,
-    &quot;deviceName&quot;: &quot;LG X power&quot;,
+    &quot;udid&quot;: &quot;420019a6fcbe6433&quot;,
+    &quot;modelName&quot;: &quot;SM-G532M&quot;,
+    &quot;deviceName&quot;: &quot;Galaxy J2 Prime&quot;,
     &quot;isEmulator&quot;: false,
     &quot;resolution&quot;: {
-      &quot;width&quot;: 720,
-      &quot;height&quot;: 1280
+      &quot;width&quot;: 540,
+      &quot;height&quot;: 960
     },
     &quot;platformName&quot;: &quot;Android&quot;,
     &quot;platformVersion&quot;: &quot;6.0.1&quot;,
     &quot;installedBrowsers&quot;: [
       {
         &quot;name&quot;: &quot;chrome&quot;,
-        &quot;version&quot;: &quot;73.0.3683.90&quot;
+        &quot;version&quot;: &quot;74.0.3729.157&quot;
       }
     ]
   },
@@ -165,8 +184,8 @@
             </runConfigurationData>
             <runConfigurationId>Kobiton Device</runConfigurationId>
          </configuration>
-         <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Test Cards tab</testSuiteEntity>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/WebTest</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
