@@ -13,7 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-Mobile.tap(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.waitForElementPresent(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 0)
+
+Mobile.tap(findTestObject('AppWerkGroep/Cards tab/Cards tab'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.scrollToText('Subtitle here', FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -57,6 +57,31 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object PrimeMWAndroidApp
+     
+    /**
+     * <p></p>
+     */
+    public static Object PrimeiOSApp
+     
+    /**
+     * <p>Profile Kobiton : KoffieTimeApp</p>
+     */
+    public static Object Prime7iOS
+     
+    /**
+     * <p>Profile Kobiton : WikiApp Android</p>
+     */
+    public static Object Prime7WikiAndroid
+     
+    /**
+     * <p>Profile Kobiton : MyMW Android</p>
+     */
+    public static Object Prime7MyMWApp
+     
+    /**
+     * <p></p>
+     */
     public static Object app
      
     /**
@@ -85,6 +110,11 @@ public class GlobalVariable {
             SupreetAndroidApp = selectedVariables['SupreetAndroidApp']
             SupreetiOSApp = selectedVariables['SupreetiOSApp']
             GmailiOSApp = selectedVariables['GmailiOSApp']
+            PrimeMWAndroidApp = selectedVariables['PrimeMWAndroidApp']
+            PrimeiOSApp = selectedVariables['PrimeiOSApp']
+            Prime7iOS = selectedVariables['Prime7iOS']
+            Prime7WikiAndroid = selectedVariables['Prime7WikiAndroid']
+            Prime7MyMWApp = selectedVariables['Prime7MyMWApp']
             app = selectedVariables['app']
             UserName = selectedVariables['UserName']
             Wachtwoord = selectedVariables['Wachtwoord']

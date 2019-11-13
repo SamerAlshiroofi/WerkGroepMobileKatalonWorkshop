@@ -24,4 +24,29 @@
       <initValue>'kobiton-store:35028'</initValue>
       <name>GmailiOSApp</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'kobiton-store:39345'</initValue>
+      <name>PrimeMWAndroidApp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'kobiton-store:39343'</initValue>
+      <name>PrimeiOSApp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>KoffieTimeApp</description>
+      <initValue>'kobiton-store:42561'</initValue>
+      <name>Prime7iOS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>WikiApp Android</description>
+      <initValue>'kobiton-store:42559'</initValue>
+      <name>Prime7WikiAndroid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>MyMW Android</description>
+      <initValue>'kobiton-store:42560'</initValue>
+      <name>Prime7MyMWApp</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

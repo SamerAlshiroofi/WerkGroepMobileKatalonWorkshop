@@ -20,7 +20,7 @@ not_run: Mobile.startApplication(GlobalVariable.app, false, FailureHandling.CONT
 not_run: Mobile.startApplication('kobiton-store:33786', false)
 
 'Samer Salves account Kobiton'
-Mobile.startApplication('kobiton-store:33069', false)
+not_run: Mobile.startApplication('kobiton-store:33069', false)
 
 'Samer Salves account iOS App Kobiton'
 not_run: Mobile.startApplication('kobiton-store:35028', false)
@@ -29,7 +29,7 @@ not_run: Mobile.startApplication('kobiton-store:35028', false)
 not_run: Mobile.startApplication('kobiton-store:v36723', false)
 
 'supreet account iOS App Kobiton'
-not_run: Mobile.startApplication('kobiton-store:33786', false)
+Mobile.startApplication('kobiton-store:42560', false)
 
 Mobile.waitForElementPresent(findTestObject('AppWerkGroep/LoginScherm/userNameField'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
